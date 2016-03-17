@@ -28,6 +28,7 @@
                     尚無紀錄
                 </ul>
             </div>
+            <form>
             <div class="form-group">
                 <label class="col-sm-2 col-md-2 control-label" for="weight">體重</label>  
                 <div class="col-sm-4 col-md-4 input-group">
@@ -41,7 +42,9 @@
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                 </div>
             </div>
+            </form>
             <hr>
+            <form>
             <div class="form-group">
                 <label class="col-sm-2 col-md-2 control-label" for="weight">體溫</label>  
                 <div class="col-sm-4 col-md-4 input-group">
@@ -55,7 +58,9 @@
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                 </div>
             </div>
+            </form>
             <hr>
+            <form>
             <div class="form-group">
                 <label class="col-sm-2 col-md-2 control-label" for="weight">血壓、心跳</label>  
                 <div class="col-sm-2 col-md-2">
@@ -74,12 +79,16 @@
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                 </div>
             </div>
+            </form>
+            <hr>
+            <form>
             <div class="form-group">
                 <label class="col-sm-2 col-md-2 control-label" for="weight">排便</label>  
                 <div class="col-sm-4 col-sm-4 col-md-4">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                 </div>
             </div>
+            </form>
         </div>
 
         <div role="tabpanel" class="tab-pane" id="food">
