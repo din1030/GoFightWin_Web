@@ -14,21 +14,23 @@
 
         <div role="tabpanel" class="tab-pane active" id="basicdata">
             <legend>本日紀錄</legend>
-            <ul>
-                <li>體重</li>
-                尚無紀錄
-                <li>體溫</li>
-                尚無紀錄
-                <li>血壓/心跳</li>
-                尚無紀錄
-                <!-- <li>血糖</li> -->
-                <!-- 尚無紀錄 -->
-                <li>排便</li>
-                尚無紀錄
-            </ul>
+            <div>
+                <ul>
+                    <li>體重</li>
+                    尚無紀錄
+                    <li>體溫</li>
+                    尚無紀錄
+                    <li>血壓、心跳</li>
+                    尚無紀錄
+                    <!-- <li>血糖</li> -->
+                    <!-- 尚無紀錄 -->
+                    <li>排便</li>
+                    尚無紀錄
+                </ul>
+            </div>
             <div class="form-group">
                 <label class="col-md-2 control-label" for="weight">體重</label>  
-                <div class="col-md-4">
+                <div class="col-md-4 input-group">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                     <span class="input-group-addon" id="basic-addon2">公斤</span>
                 </div>
@@ -36,9 +38,11 @@
                 <div class="col-md-4">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                 </div>
-                <hr>
+            </div>
+            <hr>
+            <div class="form-group">
                 <label class="col-md-2 control-label" for="weight">體溫</label>  
-                <div class="col-md-4">
+                <div class="col-md-4 input-group">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                     <span class="input-group-addon" id="basic-addon2">℃</span>
                 </div>
@@ -46,7 +50,30 @@
                 <div class="col-md-4">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                 </div>
-
+            </div>
+            <hr>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="weight">血壓、心跳</label>  
+                <div class="col-md-2">
+                    <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">/
+                </div>
+                <div class="col-md-2">
+                    <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">、
+                </div>
+                <div class="col-md-2">
+                    <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
+                </div>
+                <label class="col-md-2 control-label" for="weight">測量時間</label>  
+                <div class="col-md-4">
+                    <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="weight">排便</label>  
+                <div class="col-md-2">
+                    <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
+                </div>
+            </div>
         </div>
 
         <div role="tabpanel" class="tab-pane" id="food">
