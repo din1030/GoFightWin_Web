@@ -28,7 +28,7 @@
                     尚無紀錄
                 </ul>
             </div>
-            <form>
+            <form class="form-horizontal">
             <div class="form-group">
                 <label class="col-sm-2 col-md-2 control-label" for="weight">體重</label>  
                 <div class="col-sm-4 col-md-4 input-group">
@@ -44,7 +44,7 @@
             </div>
             </form>
             <hr>
-            <form>
+            <form class="form-horizontal">
             <div class="form-group">
                 <label class="col-sm-2 col-md-2 control-label" for="weight">體溫</label>  
                 <div class="col-sm-4 col-md-4 input-group">
@@ -60,7 +60,7 @@
             </div>
             </form>
             <hr>
-            <form>
+            <form class="form-horizontal">
             <div class="form-group">
                 <label class="col-sm-2 col-md-2 control-label" for="weight">血壓、心跳</label>  
                 <div class="col-sm-2 col-md-2">
@@ -81,7 +81,7 @@
             </div>
             </form>
             <hr>
-            <form>
+            <form class="form-horizontal">
             <div class="form-group">
                 <label class="col-sm-2 col-md-2 control-label" for="weight">排便</label>  
                 <div class="col-sm-4 col-sm-4 col-md-4">
