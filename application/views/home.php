@@ -10,18 +10,60 @@
     </ul>
 
   <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="basicdata">...</div>
+    <div class="tab-content">
 
-    <div role="tabpanel" class="tab-pane" id="food">...</div>
+        <div role="tabpanel" class="tab-pane active" id="basicdata">
+            <legend>本日紀錄</legend>
+            <ul>
+                <li>體重</li>
+                尚無紀錄
+                <li>體溫</li>
+                尚無紀錄
+                <li>血壓/心跳</li>
+                尚無紀錄
+                <!-- <li>血糖</li> -->
+                <!-- 尚無紀錄 -->
+                <li>排便</li>
+                尚無紀錄
+            </ul>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="weight">體重</label>  
+                <div class="col-md-4">
+                    <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
+                    <span class="input-group-addon" id="basic-addon2">公斤</span>
+                </div>
+                <label class="col-md-2 control-label" for="weight">測量時間</label>  
+                <div class="col-md-4">
+                    <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
+                </div>
+                <hr>
+                <label class="col-md-2 control-label" for="weight">體溫</label>  
+                <div class="col-md-4">
+                    <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
+                    <span class="input-group-addon" id="basic-addon2">℃</span>
+                </div>
+                <label class="col-md-2 control-label" for="weight">測量時間</label>  
+                <div class="col-md-4">
+                    <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
+                </div>
 
-    <div role="tabpanel" class="tab-pane" id="medical">...</div>
+        </div>
 
-    <div role="tabpanel" class="tab-pane" id="sport">...</div>
+        <div role="tabpanel" class="tab-pane" id="food">
+            
+        </div>
 
-    <div role="tabpanel" class="tab-pane" id="dayreport">...</div>
+        <div role="tabpanel" class="tab-pane" id="medical">
+            
+        </div>
 
-  </div>
+        <div role="tabpanel" class="tab-pane" id="sport">
+            
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="dayreport"></div>
+
+    </div>
 
 </div>
 
