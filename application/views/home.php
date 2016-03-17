@@ -28,49 +28,55 @@
                     尚無紀錄
                 </ul>
             </div>
-            <div class="form-group">
-                <label class="col-md-2 control-label" for="weight">體重</label>  
+            <div class="form-group ">
+                <label class="col-sm-2 col-md-2 control-label" for="weight">體重</label>  
                 <div class="col-md-4 input-group">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                     <span class="input-group-addon" id="basic-addon2">公斤</span>
                 </div>
-                <label class="col-md-2 control-label" for="weight">測量時間</label>  
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 col-md-2 control-label" for="weight">測量時間</label>  
                 <div class="col-md-4">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                 </div>
             </div>
             <hr>
             <div class="form-group">
-                <label class="col-md-2 control-label" for="weight">體溫</label>  
+                <label class="col-sm-2 col-md-2 control-label" for="weight">體溫</label>  
                 <div class="col-md-4 input-group">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                     <span class="input-group-addon" id="basic-addon2">℃</span>
                 </div>
-                <label class="col-md-2 control-label" for="weight">測量時間</label>  
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 col-md-2 control-label" for="weight">測量時間</label>  
                 <div class="col-md-4">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                 </div>
             </div>
             <hr>
             <div class="form-group">
-                <label class="col-md-2 control-label" for="weight">血壓、心跳</label>  
-                <div class="col-md-2">
+                <label class="col-sm-2 col-md-2 control-label" for="weight">血壓、心跳</label>  
+                <div class="col-sm-2 col-md-2">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">/
                 </div>
-                <div class="col-md-2">
+                <div class="col-sm-2 col-md-2">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">、
                 </div>
-                <div class="col-md-2">
+                <div class="col-sm-2 col-md-2">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                 </div>
-                <label class="col-md-2 control-label" for="weight">測量時間</label>  
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 col-md-2 control-label" for="weight">測量時間</label>  
                 <div class="col-md-4">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-md-2 control-label" for="weight">排便</label>  
-                <div class="col-md-2">
+                <label class="col-sm-2 col-md-2 control-label" for="weight">排便</label>  
+                <div class="col-sm-2 col-md-2">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                 </div>
             </div>
