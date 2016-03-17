@@ -17,15 +17,15 @@
             <div>
                 <ul>
                     <li>體重</li>
-                    尚無紀錄
+                    尚無紀錄！
                     <li>體溫</li>
-                    尚無紀錄
+                    尚無紀錄！
                     <li>血壓、心跳</li>
-                    尚無紀錄
+                    尚無紀錄！
                     <!-- <li>血糖</li> -->
                     <!-- 尚無紀錄 -->
                     <li>排便</li>
-                    尚無紀錄
+                    尚無紀錄！
                 </ul>
             </div>
             <form class="form-horizontal">
@@ -66,9 +66,11 @@
                 <div class="col-sm-2 col-md-2">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                 </div>
+                <label class="control-label" for="weight">／</label>
                 <div class="col-sm-2 col-md-2">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                 </div>
+                <label class="control-label" for="weight">、</label>
                 <div class="col-sm-2 col-md-2">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                 </div>
