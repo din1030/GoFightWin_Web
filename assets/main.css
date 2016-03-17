@@ -1,0 +1,106 @@
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -50px;
+    padding: 0 0 100px 0;
+    background-color: #eff6f9;
+}
+
+.header, .header a {
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    color: #FFF;
+    background-color: #41B3D3;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.header a:hover {
+    color: #cfe5fa;
+}
+
+.footer {
+    color: #FFF;
+    background-color: #444444;
+    padding: 15px 0;
+    font-size: 15px;
+    height: 50px;
+}
+
+#system-message {
+    position: fixed;
+    z-index: 1051;
+    top: 58px;
+    right: 25px;
+    background: #d40000;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 4px;
+    display: none;
+}
+
+.active-exh-img-block {
+    height: 300px;
+    overflow: hidden;
+}
+
+.active-exh-img-block img {
+    height: 300px;
+    /*width: 100%;*/
+    object-fit: contain;
+    object-position: center;
+}
+
+
+/*  connectedSortable =  #items_list, #in_topic_list  */
+
+.connectedSortable {
+    width: 100%;
+    min-height: 200px;
+    list-style-type: none;
+    border-radius: 7px;
+    margin: 0;
+    padding: 5px;
+    float: left;
+}
+
+.connectedSortable li {
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    width: auto;
+    cursor: move;
+}
+
+.connectedSortable li + li {
+    margin: 15px 0 0 0;
+}
+
+.panel-form {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.panel-form legend {
+    text-align: center;
+    font-size: 20px;
+}
+
+.modal-content form {
+    margin-bottom: 0;
+}
+
+.margin-top-30 {
+    margin-top: 30px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}

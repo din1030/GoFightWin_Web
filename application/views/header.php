@@ -5,7 +5,7 @@
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="/GoFightWin/assets/Bootstrap/css/bootstrap.min.css" />
         <!-- <link rel="stylesheet" href="/GoFightWin/assets/Bootstrap/css/bootstrap-flatly.css" /> -->
-        <!-- <link rel="stylesheet" href="/GoFightWin/assets/main.css" /> -->
+        <link rel="stylesheet" href="/GoFightWin/assets/main.css" />
 
         <script src="/GoFightWin/assets/jquery-1.12.1.min.js"></script>
         <!-- <link rel="stylesheet" href="/GoFightWin/assets/jquery-ui-1.11.4/jquery-ui.css"> -->
@@ -44,12 +44,12 @@
     <body>
         <div id="wrap">
             <div class="header">
-                <span>
+                <h3>
                     <a href="/GoFightWin/">
                         <!-- <img src="/GoFightWin/assets/logo.png" alt="GoFightWin" height="40" width="40" style="vertical-align: sub" /> -->
                         Go Fight Win 每日記錄
                     </a>
-                </span>
+                </h3>
             </div>
             <div id="system-message-block">
                 <div id="system-message"></div>
