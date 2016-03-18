@@ -2,7 +2,8 @@
 
   <!-- Nav tabs -->
  	<ul class="nav nav-tabs" role="tablist">
-    	<li role="presentation" class="active"><a href="#basicdata" aria-controls="basicdata" role="tab" data-toggle="tab">數據紀錄</a></li>
+        <li role="presentation" class="active"><a href="#today" aria-controls="today" role="tab" data-toggle="tab">本日紀錄</a></li>
+    	<li role="presentation"><a href="#basicdata" aria-controls="basicdata" role="tab" data-toggle="tab">基本數據</a></li>
         <li role="presentation"><a href="#food" aria-controls="food" role="tab" data-toggle="tab">多吃多健康</a></li>
         <li role="presentation"><a href="#medical" aria-controls="medical" role="tab" data-toggle="tab">藥到病除</a></li>
         <li role="presentation"><a href="#sport" aria-controls="sport" role="tab" data-toggle="tab">運動強身</a></li>
@@ -12,8 +13,8 @@
   <!-- Tab panes -->
     <div class="tab-content">
 
-        <div role="tabpanel" class="tab-pane active" id="basicdata">
-            <legend>本日紀錄</legend>
+        <div role="tabpanel" class="tab-pane active" id="today">
+            <legend>基本數據</legend>
             <div>
                 <ul>
                     <li>體重</li>
@@ -30,6 +31,27 @@
                     尚無紀錄！
                 </ul>
             </div>
+            <legend>飲食紀錄</legend>
+            <div>
+                <ul>
+                    <li>尚無紀錄！</li>
+                </ul>
+            </div>
+            <legend>用藥/醫療紀錄</legend>
+            <div>
+                <ul>
+                    <li>尚無紀錄！</li>
+                </ul>
+            </div>
+            <legend>運動</legend>
+            <div>
+                <ul>
+                    <li>尚無紀錄！</li>
+                </ul>
+            </div>
+        </div>
+
+        <div role="tabpanel" class="tab-pane active" id="basicdata">
             <form class="form-horizontal">
             <div class="form-group">
                 <label class="col-sm-2 col-md-2 control-label" for="weight">體重</label>  
@@ -134,8 +156,6 @@
     </div>
 
 </div>
-
-<hr>
 <!-- <div id="manage-block-list" class="row">
     <div class="col-lg-4 col-sm-4 col-md-4 col-sm-6 col-xs-6 manage-block">
         <a class="btn btn-block btn-lg btn-info list-group" href="/GoFightWin/exhibitions">展覽管理</a>
@@ -144,24 +164,24 @@
 <script type="text/javascript">
     $(document).ready(function() {
         $('#weight_time').datetimepicker({
-            // format: 'HH:mm'
+            format: 'YYYY/MM/DD hh:mm A',
             viewMode: 'days',
             stepping: 5
         });
         $('#temp_time').datetimepicker({
+            format: 'YYYY/MM/DD hh:mm A',
             viewMode: 'days',
             stepping: 5
-            // format: 'HH:mm'
         });
         $('#pressure_time').datetimepicker({
+            format: 'YYYY/MM/DD hh:mm A',
             viewMode: 'days',
             stepping: 5
-            // format: 'HH:mm'
         });
         $('#defecation_time').datetimepicker({
+            format: 'YYYY/MM/DD hh:mm A',
             viewMode: 'days',
             stepping: 5
-            // format: 'HH:mm'
         });
     });
 </script>
