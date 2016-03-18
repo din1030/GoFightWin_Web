@@ -3,7 +3,7 @@
         <!-- <link rel="shortcut icon" href="favicon.ico"> -->
         <title>Go Fight Win 每日記錄</title>
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="/GoFightWin/assets/Bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/GoFightWin/assets/Bootstrap/css/bootstrap.css" />
         <!-- <link rel="stylesheet" href="/GoFightWin/assets/Bootstrap/css/bootstrap-flatly.css" /> -->
         <link rel="stylesheet" href="/GoFightWin/assets/main.css" />
 

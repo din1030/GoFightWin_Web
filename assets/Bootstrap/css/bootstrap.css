@@ -3821,11 +3821,11 @@ tbody.collapse.in {
   display: table;
   border-collapse: separate;
 }
-/*.input-group[class*="col-"] {*/
-  /*float: none;*/
-  /*padding-right: 15px;*/
-  /*padding-left: 15px;*/
-/*}*/
+.input-group[class*="col-"] {
+  float: none;
+  padding-right: 15px;
+  padding-left: 15px;
+}
 .input-group .form-control {
   position: relative;
   z-index: 2;
