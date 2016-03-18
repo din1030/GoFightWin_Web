@@ -39,57 +39,87 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-2 col-md-2 control-label" for="weight">測量時間</label>  
+                <label class="col-sm-2 col-md-2 control-label" for="weight_time">測量時間</label>
                 <div class="col-sm-4 col-md-4">
-                    <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
+                    <div class="form-group">
+                        <div class='input-group date' id='weight_time'>
+                            <input id="weight_time" name="weight_time"  type='text' class="form-control input-md" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
             </form>
             <hr>
             <form class="form-horizontal">
             <div class="form-group">
-                <label class="col-sm-2 col-md-2 control-label" for="weight">體溫</label>  
+                <label class="col-sm-2 col-md-2 control-label" for="temperature">體溫</label>  
                 <div class="col-sm-4 col-md-4 input-group">
-                    <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
+                    <input id="temperature" name="temperature" type="text" placeholder="" class="form-control input-md">
                     <span class="input-group-addon" id="basic-addon2">℃</span>
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-2 col-md-2 control-label" for="weight">測量時間</label>  
+                <label class="col-sm-2 col-md-2 control-label" for="temp_time">測量時間</label> 
                 <div class="col-sm-4 col-md-4">
-                    <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
+                    <div class="form-group">
+                        <div class='input-group date' id='temp_time'>
+                            <input id="temp_time" name="temp_time"  type='text' class="form-control input-md" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
             </form>
             <hr>
             <form class="form-horizontal">
             <div class="form-group">
-                <label class="col-sm-2 col-md-2 control-label" for="weight">血壓</label>  
+                <label class="col-sm-2 col-md-2 control-label" for="blood_pressure1">血壓</label>  
                 <div class="col-sm-2 col-md-2">
-                    <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
+                    <input id="blood_pressure1" name="blood_pressure1" type="text" placeholder="" class="form-control input-md">
                 </div>
-                <label class="control-label" style="float: left;" for="weight">／</label>
+                <label class="control-label" style="float: left;" for="blood_pressure2">／</label>
                 <div class="col-sm-2 col-md-2">
-                    <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
-                </div>
-                <label class="col-sm-2 col-md-2 control-label" for="weight">心跳</label>
-                <div class="col-sm-2 col-md-2">
-                    <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
+                    <input id="blood_pressure2" name="blood_pressure2" type="text" placeholder="" class="form-control input-md">
                 </div>
             </div>
             <div class="form-group">
-                <label class="col-sm-2 col-md-2 control-label" for="weight">測量時間</label>  
+                <label class="col-sm-2 col-md-2 control-label" for="heartbeat">心跳</label>
+                <div class="col-sm-2 col-md-2">
+                    <input id="heartbeat" name="heartbeat" type="text" placeholder="" class="form-control input-md">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 col-md-2 control-label" for="pressure_time">測量時間</label>  
                 <div class="col-sm-4 col-md-4">
-                    <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
+                    <div class="form-group">
+                        <div class='input-group date' id='pressure_time'>
+                            <input id="pressure_time" name="pressure_time"  type='text' class="form-control input-md" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
             </form>
             <hr>
             <form class="form-horizontal">
             <div class="form-group">
-                <label class="col-sm-2 col-md-2 control-label" for="weight">排便</label>  
-                <div class="col-sm-4 col-sm-4 col-md-4">
-                    <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
+                <label class="col-sm-2 col-md-2 control-label" for="defecation_time">排便</label>  
+                <div class="col-sm-4 col-md-4">
+                    <div class="form-group">
+                        <div class='input-group date' id='defecation_time'>
+                            <input id="defecation_time" name="defecation_time"  type='text' class="form-control input-md" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
             </form>
@@ -120,4 +150,18 @@
     </div>
 </div> -->
 <script type="text/javascript">
+    $(document).ready(function() {
+        $('#weight_time').datetimepicker({
+            // format: 'HH:mm'
+        });
+        $('#temp_time').datetimepicker({
+            // format: 'HH:mm'
+        });
+        $('#pressure_time').datetimepicker({
+            // format: 'HH:mm'
+        });
+        $('#defecation_time').datetimepicker({
+            // format: 'HH:mm'
+        });
+    });
 </script>
