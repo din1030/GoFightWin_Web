@@ -28,9 +28,9 @@
         <!-- <script src="/GoFightWin/assets/bootstrap-table/tableExport.js"></script> -->
 
         <!-- bootstrap-datetimepicker -->
-        <!-- <link rel="stylesheet" href="/GoFightWin/assets/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" media="screen"> -->
-        <!-- <script src="/GoFightWin/assets/moment/min/moment.min.js"></script> -->
-        <!-- <script src="/GoFightWin/assets/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script> -->
+        <script src="/GoFightWin/assets/moment/min/moment.min.js"></script>
+        <script src="/GoFightWin/assets/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+        <link rel="stylesheet" href="/GoFightWin/assets/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" media="screen">
 
         <!-- bootstrap-dialog -->
         <!-- <script src="/GoFightWin/assets/bootstrap3-dialog/src/js/bootstrap-dialog.js"></script> -->

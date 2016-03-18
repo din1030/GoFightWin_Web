@@ -20,7 +20,9 @@
                     尚無紀錄！
                     <li>體溫</li>
                     尚無紀錄！
-                    <li>血壓、心跳</li>
+                    <li>血壓</li>
+                    尚無紀錄！
+                    <li>心跳</li>
                     尚無紀錄！
                     <!-- <li>血糖</li> -->
                     <!-- 尚無紀錄 -->
@@ -62,15 +64,15 @@
             <hr>
             <form class="form-horizontal">
             <div class="form-group">
-                <label class="col-sm-2 col-md-2 control-label" for="weight">血壓、心跳</label>  
+                <label class="col-sm-2 col-md-2 control-label" for="weight">血壓</label>  
                 <div class="col-sm-2 col-md-2">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                 </div>
-                <label class="control-label" for="weight">／</label>
+                <label class="control-label" style="float: left;" for="weight">／</label>
                 <div class="col-sm-2 col-md-2">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                 </div>
-                <label class="control-label" for="weight">、</label>
+                <label class="col-sm-2 col-md-2 control-label" for="weight">心跳</label>
                 <div class="col-sm-2 col-md-2">
                     <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
                 </div>
