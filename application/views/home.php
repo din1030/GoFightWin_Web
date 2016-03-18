@@ -145,21 +145,21 @@
     $(document).ready(function() {
         $('#weight_time').datetimepicker({
             // format: 'HH:mm'
-            viewMode: 'months',
+            viewMode: 'days',
             stepping: 5
         });
         $('#temp_time').datetimepicker({
-            viewMode: 'months',
+            viewMode: 'days',
             stepping: 5
             // format: 'HH:mm'
         });
         $('#pressure_time').datetimepicker({
-            viewMode: 'months',
+            viewMode: 'days',
             stepping: 5
             // format: 'HH:mm'
         });
         $('#defecation_time').datetimepicker({
-            viewMode: 'months',
+            viewMode: 'days',
             stepping: 5
             // format: 'HH:mm'
         });
