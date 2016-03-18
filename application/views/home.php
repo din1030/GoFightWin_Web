@@ -41,13 +41,11 @@
             <div class="form-group">
                 <label class="col-sm-2 col-md-2 control-label" for="weight_time">測量時間</label>
                 <div class="col-sm-4 col-md-4">
-                    <div class="form-group">
-                        <div class='input-group date' id='weight_time'>
-                            <input id="weight_time" name="weight_time"  type='text' class="form-control input-md" />
-                            <span class="input-group-addon">
-                                <span class="glyphicon glyphicon-calendar"></span>
-                            </span>
-                        </div>
+                    <div class='input-group date' id='weight_time'>
+                        <input id="weight_time" name="weight_time"  type='text' class="form-control input-md" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-time"></span>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -64,13 +62,11 @@
             <div class="form-group">
                 <label class="col-sm-2 col-md-2 control-label" for="temp_time">測量時間</label> 
                 <div class="col-sm-4 col-md-4">
-                    <div class="form-group">
-                        <div class='input-group date' id='temp_time'>
-                            <input id="temp_time" name="temp_time"  type='text' class="form-control input-md" />
-                            <span class="input-group-addon">
-                                <span class="glyphicon glyphicon-calendar"></span>
-                            </span>
-                        </div>
+                    <div class='input-group date' id='temp_time'>
+                        <input id="temp_time" name="temp_time"  type='text' class="form-control input-md" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-time"></span>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -96,13 +92,11 @@
             <div class="form-group">
                 <label class="col-sm-2 col-md-2 control-label" for="pressure_time">測量時間</label>  
                 <div class="col-sm-4 col-md-4">
-                    <div class="form-group">
-                        <div class='input-group date' id='pressure_time'>
-                            <input id="pressure_time" name="pressure_time"  type='text' class="form-control input-md" />
-                            <span class="input-group-addon">
-                                <span class="glyphicon glyphicon-calendar"></span>
-                            </span>
-                        </div>
+                    <div class='input-group date' id='pressure_time'>
+                        <input id="pressure_time" name="pressure_time"  type='text' class="form-control input-md" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-time"></span>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -112,13 +106,11 @@
             <div class="form-group">
                 <label class="col-sm-2 col-md-2 control-label" for="defecation_time">排便</label>  
                 <div class="col-sm-4 col-md-4">
-                    <div class="form-group">
-                        <div class='input-group date' id='defecation_time'>
-                            <input id="defecation_time" name="defecation_time"  type='text' class="form-control input-md" />
-                            <span class="input-group-addon">
-                                <span class="glyphicon glyphicon-calendar"></span>
-                            </span>
-                        </div>
+                    <div class='input-group date' id='defecation_time'>
+                        <input id="defecation_time" name="defecation_time"  type='text' class="form-control input-md" />
+                        <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-time"></span>
+                        </span>
                     </div>
                 </div>
             </div>
