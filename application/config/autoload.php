@@ -63,7 +63,7 @@ $autoload['libraries'] = array(
         'form_validation',
         'table',
         'upload',
-        'Error_Message'
+        // 'Error_Message'
     );
 
 /*
