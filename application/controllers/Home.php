@@ -23,7 +23,7 @@ class Home extends CI_Controller {
 		$this->db->select('weight, time');
 		$this->db->from('weight');
 		$this->db->where('date = CURDATE()');
-		$query = $this->db->get();
+		// $query = $this->db->get();
 		// $weight_array = $query->result_array();
 
 		$data['weight'] = $this->db->get();
