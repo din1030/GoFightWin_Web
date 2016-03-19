@@ -180,11 +180,11 @@
         $('#weight_date_picker').datetimepicker({
             format: 'YYYY/MM/DD',
             useCurrent: true,
-            viewMode: 'days',
+            viewMode: 'days'
             // stepping: 5
         });
         $('#weight_time_picker').datetimepicker({
-            format: 'hh:mm A',
+            format: 'hh:mm',
             useCurrent: true,
             // viewMode: 'days',
             stepping: 5
@@ -214,7 +214,7 @@
             type: 'POST',
             // resetForm: true,
             data: { 
-                time_in_24hr: time_in_24hr
+                // time_in_24hr: time_in_24hr
             },
             beforeSend: function(xhr) {
                 // var time_in_24hr = moment($('#weight_time').val(), "hh:mm A").format("HH:mm");
