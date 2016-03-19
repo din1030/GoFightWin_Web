@@ -218,7 +218,7 @@
             },
             beforeSubmit: function(arr, $form, options) { 
                 for(var key in arr){
-                    if (arr[key].name == 'time']) {
+                    if (arr[key].name == 'time') {
                         arr[key].value = moment($('#weight_time').val(), "hh:mm A").format("HH:mm");
                         break;
                     }
