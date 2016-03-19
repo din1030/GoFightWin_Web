@@ -122,7 +122,7 @@
                     <div class="col-xs-5 col-sm-2 col-md-2">
                         <input id="systolic" name="systolic" type="text" placeholder="" class="form-control input-md">
                     </div>
-                    <label class="control-label col-xs-1" style="float: left;" for="diastolic">／</label>
+                    <label class="control-label" style="float: left;" for="diastolic">／</label>
                     <div class="col-xs-5 col-sm-2 col-md-2">
                         <input id="diastolic" name="diastolic" type="text" placeholder="" class="form-control input-md">
                     </div>
