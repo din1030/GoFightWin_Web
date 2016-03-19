@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 col-md-1 control-label" for="weight_time">測量日期</label>
+                    <label class="col-sm-2 col-md-1 control-label" for="weight_date">測量日期</label>
                     <div class="col-sm-4 col-md-4">
                         <div class='input-group date' id='weight_date_picker'>
                             <input id="weight_date" name="weight_date"  type='text' class="form-control input-md" />
@@ -221,12 +221,12 @@
             },
             success: function(error) {
                 if (error) {
-                    $('#form_alert').html(error);
-                    $('#form_alert').show();
-                    $('#system-message').fadeOut();
+                    $('#system-message').html(error);
+                    $('#system-message').show();
+                    // $('#system-message').fadeOut();
                 } else {
-                    $('#form_alert').hide();
-                    $('#form_alert').empty();
+                    // $('#form_alert').hide();
+                    // $('#form_alert').empty();
                     // $('form').clearForm();
 
                     // $.ajax({
