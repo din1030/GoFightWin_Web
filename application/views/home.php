@@ -210,7 +210,7 @@
             type: 'POST',
             // resetForm: true,
             data: { 
-                time_in_24hr: moment($('#weight_time').val(), "hh:mm A").format("HH:mm") 
+                'time_in_24hr': moment($('#weight_time').val(), "hh:mm A").format("HH:mm")
             },
             beforeSend: function(xhr) {
                 // $('#weight_time').val(moment($('#weight_time').val(), "h:mm A").format("HH:mm"));
