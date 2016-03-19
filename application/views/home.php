@@ -206,6 +206,7 @@
             stepping: 5
         });
         var time_in_24hr = moment($('#weight_time').val(), "hh:mm A").format("HH:mm");
+
         $('form').ajaxForm({
             type: 'POST',
             // resetForm: true,
@@ -213,6 +214,7 @@
                 time_in_24hr: time_in_24hr
             },
             beforeSend: function(xhr) {
+                alert(time_in_24hr);
                 // $('#weight_time').val(moment($('#weight_time').val(), "h:mm A").format("HH:mm"));
                 $('#system-message').html('處理中...');
                 $('#system-message').show();
