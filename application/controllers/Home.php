@@ -21,7 +21,7 @@ class Home extends CI_Controller {
 	public function index()
 	{	
 		$template = array(
-	        'table_open' => '<table class="table table-striped" border="1" cellpadding="4" cellspacing="2">'
+	        'table_open' => '<table class="table table-striped">'
 		);
 
 		$this->table->set_template($template);
@@ -29,18 +29,22 @@ class Home extends CI_Controller {
 		$this->db->select('weight, time');
 		$this->db->from('weight');
 		$this->db->where('date = CURDATE()');
-		// $query = $this->db->get();
-		// $weight_array = $query->result_array();
-
 		$data['weight'] = $this->db->get();
 
 		$this->db->select('temperature, time');
 		$this->db->from('temperature');
 		$this->db->where('date = CURDATE()');
-		// $query = $this->db->get();
-		// $temp_array = $query->result_array();
-
 		$data['temp'] = $this->db->get();
+
+		$this->db->select('systolic, diastolic, heartbeat, time');
+		$this->db->from('blood_pressure');
+		$this->db->where('date = CURDATE()');
+		$data['pressure'] = $this->db->get();
+
+		$this->db->select('time');
+		$this->db->from('defecation');
+		$this->db->where('date = CURDATE()');
+		$data['defecation'] = $this->db->get();
 
 		$this->load->view('header');
 		$this->load->view('home', $data);

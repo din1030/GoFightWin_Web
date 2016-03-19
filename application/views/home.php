@@ -16,27 +16,17 @@
         <div role="tabpanel" class="tab-pane active" id="today">
             <legend>基本數據</legend>
             <div>
-                <ul>
-                    <li>體重</li>
-                    <?php $this->table->set_heading('體重', '測量時間'); ?>
-                    <?= $this->table->generate($weight); ?>
-
-                    <li>體溫</li>
-                    <?php $this->table->set_heading('體溫', '測量時間'); ?>
-                    <?= $this->table->generate($temp); ?>
-
-                    <li>血壓</li>
-                    尚無紀錄！
-
-                    <li>心跳</li>
-                    尚無紀錄！
-
-                    <!-- <li>血糖</li> -->
-                    <!-- 尚無紀錄 -->
-                    
-                    <li>排便</li>
-                    尚無紀錄！
-                </ul>
+                <?php $this->table->set_heading('體重', '測量時間'); ?>
+                <?= $this->table->generate($weight); ?>
+                <hr>
+                <?php $this->table->set_heading('體溫', '測量時間'); ?>
+                <?= $this->table->generate($temp); ?>
+                <hr>
+                <?php $this->table->set_heading('收縮壓', '舒張壓', '心跳', '測量時間'); ?>
+                <?= $this->table->generate($pressure); ?>
+                <hr>
+                <?php $this->table->set_heading('排便時間'); ?>
+                <?= $this->table->generate($defecation); ?>
             </div>
             <legend>飲食紀錄</legend>
             <div>
