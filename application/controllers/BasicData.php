@@ -33,7 +33,7 @@ class BasicData extends CI_Controller {
         if ($this->form_validation->run() == false) {
             echo validation_errors();
         } else {
-        	// echo $this->input->post('time_in_24hr');
+        	echo $this->input->post('time_in_24hr');
         	$data = array(
 		        'weight' => $this->input->post('weight'),
 		        'date' => $this->input->post('weight_date'),

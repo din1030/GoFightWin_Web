@@ -218,7 +218,7 @@
             },
             beforeSend: function(xhr) {
                 // var time_in_24hr = moment($('#weight_time').val(), "hh:mm A").format("HH:mm");
-                alert(time_in_24hr);
+                // alert(time_in_24hr);
                 // var time_in_24hr = moment($('#weight_time').val(), "hh:mm A").format("HH:mm");
                 // $('#weight_time').val(moment($('#weight_time').val(), "hh:mm A").format("HH:mm"));
                 $('#system-message').html('處理中...');
