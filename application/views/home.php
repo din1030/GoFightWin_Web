@@ -51,7 +51,7 @@
             </div>
         </div>
 
-        <div role="tabpanel" class="tab-pane active" id="basicdata">
+        <div role="tabpanel" class="tab-pane" id="basicdata">
             <legend>新增數據</legend>
             <form id="weight_form" class="form-horizontal" action="/GoFightWin/basicdata/add_weight_action" method="post">
                 <div class="form-group">
@@ -179,13 +179,13 @@
 
         $('#weight_date_picker').datetimepicker({
             format: 'YYYY/MM/DD',
-            useCurrent: true;
+            useCurrent: true,
             viewMode: 'days',
             // stepping: 5
         });
         $('#weight_time_picker').datetimepicker({
             format: 'hh:mm A',
-            useCurrent: true;
+            useCurrent: true,
             // viewMode: 'days',
             stepping: 5
         });
