@@ -208,7 +208,7 @@
 
         $('form').ajaxForm({
                 beforeSend: function(xhr) {
-                    $('#weight_time').val() = moment("05:55 PM", "h:mm A").format("HH:mm");
+                    $('#weight_time').val(moment($('#weight_time').val(), "h:mm A").format("HH:mm"));
                     $('#system-message').html('處理中...');
                     $('#system-message').show();
                 },
