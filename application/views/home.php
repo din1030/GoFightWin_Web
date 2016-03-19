@@ -86,7 +86,7 @@
                 <button type="submit" class="btn btn-primary btn-block">新增體重紀錄</button>
             </form>
             <hr>
-            <form class="form-horizontal">
+            <form class="form-horizontal" action="/GoFightWin/BasicData/add_temp_action" method="post">
                 <div class="form-group">
                     <label class="col-sm-2 col-md-1 control-label" for="temperature">體溫</label>  
                     <div class="col-sm-4 col-md-4 input-group">
@@ -119,7 +119,7 @@
                 <button type="submit" class="btn btn-primary btn-block">新增體溫紀錄</button>
             </form>
             <hr>
-            <form class="form-horizontal">
+            <form class="form-horizontal" action="/GoFightWin/BasicData/add_pressure_action" method="post">
                 <div class="form-group">
                     <label class="col-sm-2 col-md-1 control-label" for="systolic">血壓</label>  
                     <div class="col-sm-2 col-md-1">
@@ -161,7 +161,7 @@
                 <button type="submit" class="btn btn-primary btn-block">新增血壓心跳紀錄</button>
             </form>
             <hr>
-            <form class="form-horizontal">
+            <form class="form-horizontal" action="/GoFightWin/BasicData/add_defecation_action" method="post">
                 <div class="form-group">
                     <label class="col-sm-2 col-md-1 control-label" for="defecation_date">排便</label>  
                     <div class="col-sm-4 col-md-4">
