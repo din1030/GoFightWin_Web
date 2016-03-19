@@ -20,14 +20,21 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{	
-		$this->db->select('temperature, time');
+		$this->db->select('weight, time');
 		$this->db->from('weight');
-		$this->db->where('date', 'CURDATE()');
+		$this->db->where('date = CURDATE()');
 		$query = $this->db->get();
 		$weight_array = $query->result_array();
 
 		$data['weight'] = $weight_array;
 
+		$this->db->select('temperature, time');
+		$this->db->from('temperature');
+		$this->db->where('date = CURDATE()');
+		$query = $this->db->get();
+		$weight_array = $query->result_array();
+
+		$data['weight'] = $weight_array;
 		$this->load->view('header');
 		$this->load->view('home', $data);
 		$this->load->view('footer');
