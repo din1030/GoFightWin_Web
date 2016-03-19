@@ -26,22 +26,22 @@ class Home extends CI_Controller {
 
 		$this->table->set_template($template);
 
-		$this->db->select('weight, time');
+		$this->db->select('weight, SUBSTRING(time,1,5)');
 		$this->db->from('weight');
 		$this->db->where('date = CURDATE()');
 		$data['weight'] = $this->db->get();
 
-		$this->db->select('temperature, time');
+		$this->db->select('temperature, SUBSTRING(time,1,5)');
 		$this->db->from('temperature');
 		$this->db->where('date = CURDATE()');
 		$data['temp'] = $this->db->get();
 
-		$this->db->select('systolic, diastolic, heartbeat, time');
+		$this->db->select('systolic, diastolic, heartbeat, SUBSTRING(time,1,5)');
 		$this->db->from('blood_pressure');
 		$this->db->where('date = CURDATE()');
 		$data['pressure'] = $this->db->get();
 
-		$this->db->select('time');
+		$this->db->select('SUBSTRING(time,1,5)');
 		$this->db->from('defecation');
 		$this->db->where('date = CURDATE()');
 		$data['defecation'] = $this->db->get();
