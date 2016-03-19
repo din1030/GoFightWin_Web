@@ -24,17 +24,17 @@ class Home extends CI_Controller {
 		$this->db->from('weight');
 		$this->db->where('date = CURDATE()');
 		$query = $this->db->get();
-		$weight_array = $query->result_array();
+		// $weight_array = $query->result_array();
 
-		$data['weight'] = $weight_array;
+		$data['weight'] = $this->db->get();
 
 		$this->db->select('temperature, time');
 		$this->db->from('temperature');
 		$this->db->where('date = CURDATE()');
-		$query = $this->db->get();
-		$temp_array = $query->result_array();
+		// $query = $this->db->get();
+		// $temp_array = $query->result_array();
 
-		$data['temp'] = $temp_array;
+		$data['temp'] = $this->db->get();
 
 		$this->load->view('header');
 		$this->load->view('home', $data);

@@ -18,15 +18,22 @@
             <div>
                 <ul>
                     <li>體重</li>
+                    <?php $this->table->set_heading('體重', '測量時間'); ?>
                     <?= $this->table->generate($weight); ?>
+
                     <li>體溫</li>
+                    <?php $this->table->set_heading('體溫', '測量時間'); ?>
                     <?= $this->table->generate($temp); ?>
+
                     <li>血壓</li>
                     尚無紀錄！
+
                     <li>心跳</li>
                     尚無紀錄！
+
                     <!-- <li>血糖</li> -->
                     <!-- 尚無紀錄 -->
+                    
                     <li>排便</li>
                     尚無紀錄！
                 </ul>
