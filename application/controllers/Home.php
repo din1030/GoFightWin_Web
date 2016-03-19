@@ -32,9 +32,10 @@ class Home extends CI_Controller {
 		$this->db->from('temperature');
 		$this->db->where('date = CURDATE()');
 		$query = $this->db->get();
-		$weight_array = $query->result_array();
+		$temp_array = $query->result_array();
 
-		$data['weight'] = $weight_array;
+		$data['temp'] = $temp_array;
+
 		$this->load->view('header');
 		$this->load->view('home', $data);
 		$this->load->view('footer');

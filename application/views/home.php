@@ -20,7 +20,7 @@
                     <li>體重</li>
                     <?= $this->table->generate($weight); ?>
                     <li>體溫</li>
-                    尚無紀錄！
+                    <?= $this->table->generate($temp); ?>
                     <li>血壓</li>
                     尚無紀錄！
                     <li>心跳</li>
