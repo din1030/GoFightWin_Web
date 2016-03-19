@@ -64,7 +64,7 @@
                 <div class="form-group">
                     <label class="col-sm-2 col-md-1 control-label" for="weight_date">測量日期</label>
                     <div class="col-sm-4 col-md-4">
-                        <div class='input-group date' id='weight_date_picker'>
+                        <div class='input-group date bd_date_picker' id='weight_date_picker'>
                             <input id="weight_date" name="weight_date"  type='text' class="form-control input-md" />
                             <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-calendar"></span>
@@ -75,7 +75,7 @@
                 <div class="form-group">
                     <label class="col-sm-2 col-md-1 control-label" for="weight_time">測量時間</label>
                     <div class="col-sm-4 col-md-4">
-                        <div class='input-group date' id='weight_time_picker'>
+                        <div class='input-group date bd_time_picker' id='weight_time_picker'>
                             <input id="weight_time" name="weight_time"  type='text' class="form-control input-md" />
                             <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-time"></span>
@@ -95,10 +95,21 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 col-md-1 control-label" for="temp_time">測量時間</label> 
+                    <label class="col-sm-2 col-md-1 control-label" for="temp_time">測量日期</label> 
                     <div class="col-sm-4 col-md-4">
-                        <div class='input-group date' id='temp_time'>
+                        <div class='input-group date bd_date_picker' id='temp_time'>
                             <input id="temp_time" name="temp_time"  type='text' class="form-control input-md" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 col-md-1 control-label" for="temp_date">測量時間</label> 
+                    <div class="col-sm-4 col-md-4">
+                        <div class='input-group date bd_time_picker' id='temp_date'>
+                            <input id="temp_date" name="temp_date"  type='text' class="form-control input-md" />
                             <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-time"></span>
                             </span>
@@ -125,9 +136,20 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label class="col-sm-2 col-md-1 control-label" for="pressure_date">測量日期</label>  
+                    <div class="col-sm-4 col-md-4">
+                        <div class='input-group date bd_date_picker' id='pressure_date'>
+                            <input id="pressure_date" name="pressure_date"  type='text' class="form-control input-md" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-time"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
                     <label class="col-sm-2 col-md-1 control-label" for="pressure_time">測量時間</label>  
                     <div class="col-sm-4 col-md-4">
-                        <div class='input-group date' id='pressure_time'>
+                        <div class='input-group date bd_time_picker' id='pressure_time'>
                             <input id="pressure_time" name="pressure_time"  type='text' class="form-control input-md" />
                             <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-time"></span>
@@ -139,9 +161,20 @@
             <hr>
             <form class="form-horizontal">
                 <div class="form-group">
-                    <label class="col-sm-2 col-md-1 control-label" for="defecation_time">排便</label>  
+                    <label class="col-sm-2 col-md-1 control-label" for="defecation_date">排便</label>  
                     <div class="col-sm-4 col-md-4">
-                        <div class='input-group date' id='defecation_time'>
+                        <div class='input-group date bd_date_picker' id='defecation_date'>
+                            <input id="defecation_date" name="defecation_date"  type='text' class="form-control input-md" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 col-md-1 control-label" for="defecation_time"></label>  
+                    <div class="col-sm-4 col-md-4">
+                        <div class='input-group date bd_time_picker' id='defecation_time'>
                             <input id="defecation_time" name="defecation_time"  type='text' class="form-control input-md" />
                             <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-time"></span>
@@ -177,39 +210,19 @@
 <script type="text/javascript">
     $(document).ready(function() {
         var time_in_24hr = '';
-        $('#weight_date_picker').datetimepicker({
+        $('.bd_date_picker').datetimepicker({
             format: 'YYYY/MM/DD',
             useCurrent: true,
             viewMode: 'days'
             // stepping: 5
         });
-        $('#weight_time_picker').datetimepicker({
+        $('.bd_time_picker').datetimepicker({
             format: 'hh:mm A',
             useCurrent: true,
             // viewMode: 'days',
             stepping: 5
         });
-        $("#weight_time_picker").on("dp.change", function(e) {
-            time_in_24hr = moment($('#weight_time').val(), "hh:mm A").format("HH:mm");
-        });
         
-        $('#temp_time').datetimepicker({
-            format: 'YYYY/MM/DD hh:mm A',
-            viewMode: 'days',
-            stepping: 5
-        });
-        $('#pressure_time').datetimepicker({
-            format: 'YYYY/MM/DD hh:mm A',
-            viewMode: 'days',
-            stepping: 5
-        });
-        $('#defecation_time').datetimepicker({
-            format: 'YYYY/MM/DD hh:mm A',
-            viewMode: 'days',
-            stepping: 5
-        });
-        
-
         $('form').ajaxForm({
             type: 'POST',
             resetForm: true,
