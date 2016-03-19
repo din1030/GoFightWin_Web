@@ -176,7 +176,7 @@
 </div> -->
 <script type="text/javascript">
     $(document).ready(function() {
-
+        var time_in_24hr = '';
         $('#weight_date_picker').datetimepicker({
             format: 'YYYY/MM/DD',
             useCurrent: true,
@@ -189,7 +189,10 @@
             // viewMode: 'days',
             stepping: 5
         });
-
+        $("#weight_time_picker").on("dp.change", function(e) {
+            time_in_24hr = moment($('#weight_time').val(), "hh:mm A").format("HH:mm");
+        });
+        
         $('#temp_time').datetimepicker({
             format: 'YYYY/MM/DD hh:mm A',
             viewMode: 'days',
@@ -211,10 +214,10 @@
             type: 'POST',
             // resetForm: true,
             data: { 
-                time_in_24hr: moment($('#weight_time').val(), "hh:mm A").format("HH:mm")
+                time_in_24hr: time_in_24hr;
             },
             beforeSend: function(xhr) {
-                var time_in_24hr = moment($('#weight_time').val(), "hh:mm A").format("HH:mm");
+                // var time_in_24hr = moment($('#weight_time').val(), "hh:mm A").format("HH:mm");
                 alert(time_in_24hr);
                 // var time_in_24hr = moment($('#weight_time').val(), "hh:mm A").format("HH:mm");
                 // $('#weight_time').val(moment($('#weight_time').val(), "hh:mm A").format("HH:mm"));
