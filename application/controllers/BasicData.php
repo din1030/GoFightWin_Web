@@ -18,10 +18,18 @@ class BasicData extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	public function index()
+	{
+		$this->load->view('header');
+		$this->load->view('home');
+		$this->load->view('footer');
+	}
+	
     public function add_weight_action()
     {
-        $this->form_validation->set_rules('item_title', '展品名稱', 'trim|required');
-        $this->form_validation->set_rules('item_creator', '展品作者', 'trim|required');
+        $this->form_validation->set_rules('weight', '體重', 'trim|required');
+        $this->form_validation->set_rules('weight_date', '測量日期', 'trim|required');
+        $this->form_validation->set_rules('weight_time', '測量時間', 'trim|required');
         if ($this->form_validation->run() == false) {
             echo validation_errors();
         } else {
