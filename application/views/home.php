@@ -184,7 +184,7 @@
             // stepping: 5
         });
         $('#weight_time_picker').datetimepicker({
-            format: 'hh:mm',
+            format: 'HH:mm',
             useCurrent: true,
             // viewMode: 'days',
             stepping: 5
