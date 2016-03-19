@@ -207,40 +207,46 @@
         });
 
         $('form').ajaxForm({
-                beforeSend: function(xhr) {
-                    $('#weight_time').val(moment($('#weight_time').val(), "h:mm A").format("HH:mm"));
-                    $('#system-message').html('處理中...');
-                    $('#system-message').show();
-                },
-                success: function(error) {
-                    if (error) {
-                        $('#form_alert').html(error);
-                        $('#form_alert').show();
-                        $('#system-message').fadeOut();
-                    } else {
-                        $('#form_alert').hide();
-                        $('#form_alert').empty();
+            type: 'POST',
+            resetForm: true,
+            data: { 
+                time_in_24hr: $('#weight_time').val(moment($('#weight_time').val(), "h:mm A").format("HH:mm")) 
+            },
+            beforeSend: function(xhr) {
+                // $('#weight_time').val(moment($('#weight_time').val(), "h:mm A").format("HH:mm"));
+                $('#system-message').html('處理中...');
+                $('#system-message').show();
+            },
+            success: function(error) {
+                if (error) {
+                    $('#form_alert').html(error);
+                    $('#form_alert').show();
+                    $('#system-message').fadeOut();
+                } else {
+                    $('#form_alert').hide();
+                    $('#form_alert').empty();
+                    // $('form').clearForm();
 
-                        // $.ajax({
-                        //     url: '/iBeaGuide/exhibitions/print_exh_list',
-                        //     type: "GET",
-                        //     dataType: 'html',
-                        //     success: function(html_block) {
-                        //         $('#exh_list_block').html(html_block);
-                        //         $('#exh_form_block').empty();
-                        //         $('[data-toggle="table"]').bootstrapTable();
-                        //         $('div.sortable.both:last').removeClass('th-inner sortable both').css('padding', '8px');
-                        //         $('#system-message').html('完成');
-                        //         $('#system-message').fadeOut();
-                        //         $.scrollTo($('#add-exh-btn'), 500, {offset: -10});
-                        //     }
-                        // });
+                    // $.ajax({
+                    //     url: '/iBeaGuide/exhibitions/print_exh_list',
+                    //     type: "GET",
+                    //     dataType: 'html',
+                    //     success: function(html_block) {
+                    //         $('#exh_list_block').html(html_block);
+                    //         $('#exh_form_block').empty();
+                    //         $('[data-toggle="table"]').bootstrapTable();
+                    //         $('div.sortable.both:last').removeClass('th-inner sortable both').css('padding', '8px');
+                    //         $('#system-message').html('完成');
+                    //         $('#system-message').fadeOut();
+                    //         $.scrollTo($('#add-exh-btn'), 500, {offset: -10});
+                    //     }
+                    // });
 
-                        $('#system-message').html('完成');
-                        $('#system-message').fadeOut();
-                    }
+                    $('#system-message').html('完成');
+                    $('#system-message').fadeOut();
                 }
-            });
+            }
+        });
 
     });
 </script>
