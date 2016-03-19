@@ -18,7 +18,7 @@
             <div>
                 <ul>
                     <li>體重</li>
-                    尚無紀錄！
+                    <?= $this->table->generate($weight); ?>
                     <li>體溫</li>
                     尚無紀錄！
                     <li>血壓</li>
@@ -212,7 +212,7 @@
 </div> -->
 <script type="text/javascript">
     $(document).ready(function() {
-        
+
         $('.bd_date_picker').datetimepicker({
             format: 'YYYY/MM/DD',
             useCurrent: true,

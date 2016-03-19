@@ -19,9 +19,17 @@ class Home extends CI_Controller {
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	public function index()
-	{
+	{	
+		$this->db->select('temperature, time');
+		$this->db->from('weight');
+		$this->db->where('date', 'CURDATE()');
+		$query = $this->db->get();
+		$weight_array = $query->result_array();
+
+		$data['weight'] = $weight_array;
+
 		$this->load->view('header');
-		$this->load->view('home');
+		$this->load->view('home', $data);
 		$this->load->view('footer');
 	}
 }
