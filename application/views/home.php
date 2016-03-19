@@ -53,7 +53,7 @@
 
         <div role="tabpanel" class="tab-pane" id="basicdata">
             <legend>新增數據</legend>
-            <form id="weight_form" class="form-horizontal" action="/GoFightWin/basicdata/add_weight_action" method="post">
+            <form id="weight_form" class="form-horizontal" action="/GoFightWin/BasicData/add_weight_action" method="post">
                 <div class="form-group">
                     <label class="col-sm-2 col-md-1 control-label" for="weight">體重</label>  
                     <div class="col-sm-4 col-md-4 input-group">
