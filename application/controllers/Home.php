@@ -20,6 +20,12 @@ class Home extends CI_Controller {
 	 */
 	public function index()
 	{	
+		$template = array(
+	        'table_open' => '<table class="table table-striped" border="1" cellpadding="4" cellspacing="2">'
+		);
+
+		$this->table->set_template($template);
+
 		$this->db->select('weight, time');
 		$this->db->from('weight');
 		$this->db->where('date = CURDATE()');
