@@ -177,11 +177,19 @@
 <script type="text/javascript">
     $(document).ready(function() {
 
-        $('#weight_time_picker').datetimepicker({
-            format: 'YYYY/MM/DD hh:mm A',
+        $('#weight_date_picker').datetimepicker({
+            format: 'YYYY/MM/DD',
+            useCurrent: true;
             viewMode: 'days',
+            // stepping: 5
+        });
+        $('#weight_time_picker').datetimepicker({
+            format: 'hh:mm A',
+            useCurrent: true;
+            // viewMode: 'days',
             stepping: 5
         });
+
         $('#temp_time').datetimepicker({
             format: 'YYYY/MM/DD hh:mm A',
             viewMode: 'days',
