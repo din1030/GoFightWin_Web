@@ -65,7 +65,7 @@
                     <label class="col-sm-2 col-md-1 control-label" for="weight_date">測量日期</label>
                     <div class="col-sm-4 col-md-4">
                         <div class='input-group date bd_date_picker' id='weight_date_picker'>
-                            <input id="weight_date" name="weight_date"  type='text' class="form-control input-md" />
+                            <input id="weight_date" name="weight_date" type='text' class="form-control input-md" />
                             <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-calendar"></span>
                             </span>
@@ -76,7 +76,7 @@
                     <label class="col-sm-2 col-md-1 control-label" for="weight_time">測量時間</label>
                     <div class="col-sm-4 col-md-4">
                         <div class='input-group date bd_time_picker' id='weight_time_picker'>
-                            <input id="weight_time" name="weight_time"  type='text' class="form-control input-md" />
+                            <input id="weight_time" name="weight_time" type='text' class="form-control input-md" />
                             <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-time"></span>
                             </span>
@@ -97,8 +97,8 @@
                 <div class="form-group">
                     <label class="col-sm-2 col-md-1 control-label" for="temp_date">測量日期</label> 
                     <div class="col-sm-4 col-md-4">
-                        <div class='input-group date bd_date_picker' id='temp_date'>
-                            <input id="temp_date" name="temp_date"  type='text' class="form-control input-md" />
+                        <div class='input-group date bd_date_picker' id='temp_date_picker'>
+                            <input id="temp_date" name="temp_date" type='text' class="form-control input-md" />
                             <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-calendar"></span>
                             </span>
@@ -108,8 +108,8 @@
                 <div class="form-group">
                     <label class="col-sm-2 col-md-1 control-label" for="temp_time">測量時間</label> 
                     <div class="col-sm-4 col-md-4">
-                        <div class='input-group date bd_time_picker' id='temp_time'>
-                            <input id="temp_time" name="temp_time"  type='text' class="form-control input-md" />
+                        <div class='input-group date bd_time_picker' id='temp_time_picker'>
+                            <input id="temp_time" name="temp_time" type='text' class="form-control input-md" />
                             <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-time"></span>
                             </span>
@@ -139,7 +139,7 @@
                 <div class="form-group">
                     <label class="col-sm-2 col-md-1 control-label" for="pressure_date">測量日期</label>  
                     <div class="col-sm-4 col-md-4">
-                        <div class='input-group date bd_date_picker' id='pressure_date'>
+                        <div class='input-group date bd_date_picker' id='pressure_date_picker'>
                             <input id="pressure_date" name="pressure_date"  type='text' class="form-control input-md" />
                             <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-time"></span>
@@ -150,7 +150,7 @@
                 <div class="form-group">
                     <label class="col-sm-2 col-md-1 control-label" for="pressure_time">測量時間</label>  
                     <div class="col-sm-4 col-md-4">
-                        <div class='input-group date bd_time_picker' id='pressure_time'>
+                        <div class='input-group date bd_time_picker' id='pressure_time_picker'>
                             <input id="pressure_time" name="pressure_time"  type='text' class="form-control input-md" />
                             <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-time"></span>
@@ -165,7 +165,7 @@
                 <div class="form-group">
                     <label class="col-sm-2 col-md-1 control-label" for="defecation_date">排便</label>  
                     <div class="col-sm-4 col-md-4">
-                        <div class='input-group date bd_date_picker' id='defecation_date'>
+                        <div class='input-group date bd_date_picker' id='defecation_date_picker'>
                             <input id="defecation_date" name="defecation_date"  type='text' class="form-control input-md" />
                             <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-calendar"></span>
@@ -176,7 +176,7 @@
                 <div class="form-group">
                     <label class="col-sm-2 col-md-1 control-label" for="defecation_time"></label>  
                     <div class="col-sm-4 col-md-4">
-                        <div class='input-group date bd_time_picker' id='defecation_time'>
+                        <div class='input-group date bd_time_picker' id='defecation_time_picker'>
                             <input id="defecation_time" name="defecation_time"  type='text' class="form-control input-md" />
                             <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-time"></span>
@@ -212,7 +212,7 @@
 </div> -->
 <script type="text/javascript">
     $(document).ready(function() {
-        var time_in_24hr = '';
+        
         $('.bd_date_picker').datetimepicker({
             format: 'YYYY/MM/DD',
             useCurrent: true,

@@ -54,7 +54,7 @@ class BasicData extends CI_Controller {
         } else {
         	// echo $this->input->post('time_in_24hr');
         	$data = array(
-		        'temperature' => $this->input->post('weight'),
+		        'temperature' => $this->input->post('temperature'),
 		        'date' => $this->input->post('temp_date'),
 		        'time' => $this->input->post('temp_time')
 		        // 'time' => $this->input->post('time_in_24hr')
