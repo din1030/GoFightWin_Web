@@ -205,7 +205,7 @@
             viewMode: 'days',
             stepping: 5
         });
-        // var time_in_24hr = moment($('#weight_time').val(), "hh:mm A").format("HH:mm");
+        
 
         $('form').ajaxForm({
             type: 'POST',
@@ -214,7 +214,9 @@
                 time_in_24hr: moment($('#weight_time').val(), "hh:mm A").format("HH:mm")
             },
             beforeSend: function(xhr) {
-                // alert(time_in_24hr);
+                var time_in_24hr = moment($('#weight_time').val(), "hh:mm A").format("HH:mm");
+                alert(time_in_24hr);
+                // var time_in_24hr = moment($('#weight_time').val(), "hh:mm A").format("HH:mm");
                 // $('#weight_time').val(moment($('#weight_time').val(), "hh:mm A").format("HH:mm"));
                 $('#system-message').html('處理中...');
                 $('#system-message').show();

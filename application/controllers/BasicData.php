@@ -37,7 +37,7 @@ class BasicData extends CI_Controller {
         	$data = array(
 		        'weight' => $this->input->post('weight'),
 		        'date' => $this->input->post('weight_date'),
-		        'time' => $this->input->post('time_in_24hr')
+		        'time' => $this->input->post('weight_time')
 			);
         	$this->db->insert('weight', $data);
         }
