@@ -205,12 +205,12 @@
             viewMode: 'days',
             stepping: 5
         });
-
+        var time_in_24hr = moment($('#weight_time').val(), "hh:mm A").format("HH:mm");
         $('form').ajaxForm({
             type: 'POST',
             // resetForm: true,
             data: { 
-                'time_in_24hr': moment($('#weight_time').val(), "hh:mm A").format("HH:mm")
+                time_in_24hr: time_in_24hr
             },
             beforeSend: function(xhr) {
                 // $('#weight_time').val(moment($('#weight_time').val(), "h:mm A").format("HH:mm"));
