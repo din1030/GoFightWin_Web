@@ -212,14 +212,14 @@
 
         $('form').ajaxForm({
             type: 'POST',
-            // resetForm: true,
+            resetForm: true,
             data: { 
                 // time_in_24hr: time_in_24hr
             },
             beforeSubmit: function(arr, $form, options) { 
                 for(var key in arr){
-                    if (arr[key].name == 'weight_time') {
-                        arr[key].value = moment($('#weight_time').val(), "hh:mm A").format("HH:mm");
+                    if (arr[key].name.search('time') > 0) {
+                        arr[key].value = moment($('#' + arr[key].name).val(), "hh:mm A").format("HH:mm");
                         break;
                     }
                 }
