@@ -1,7 +1,7 @@
 <div>
 
   <!-- Nav tabs -->
- 	<ul class="nav nav-tabs" role="tablist">
+ 	<ul class="nav nav-tabs margin-bottom-30" role="tablist">
         <li role="presentation" class="active"><a href="#today" aria-controls="today" role="tab" data-toggle="tab">本日紀錄</a></li>
     	<li role="presentation"><a href="#basicdata" aria-controls="basicdata" role="tab" data-toggle="tab">基本數據</a></li>
         <li role="presentation"><a href="#food" aria-controls="food" role="tab" data-toggle="tab">多吃多健康</a></li>
@@ -95,10 +95,10 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 col-md-1 control-label" for="temp_time">測量日期</label> 
+                    <label class="col-sm-2 col-md-1 control-label" for="temp_date">測量日期</label> 
                     <div class="col-sm-4 col-md-4">
-                        <div class='input-group date bd_date_picker' id='temp_time'>
-                            <input id="temp_time" name="temp_time"  type='text' class="form-control input-md" />
+                        <div class='input-group date bd_date_picker' id='temp_date'>
+                            <input id="temp_date" name="temp_date"  type='text' class="form-control input-md" />
                             <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-calendar"></span>
                             </span>
@@ -106,27 +106,28 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="col-sm-2 col-md-1 control-label" for="temp_date">測量時間</label> 
+                    <label class="col-sm-2 col-md-1 control-label" for="temp_time">測量時間</label> 
                     <div class="col-sm-4 col-md-4">
-                        <div class='input-group date bd_time_picker' id='temp_date'>
-                            <input id="temp_date" name="temp_date"  type='text' class="form-control input-md" />
+                        <div class='input-group date bd_time_picker' id='temp_time'>
+                            <input id="temp_time" name="temp_time"  type='text' class="form-control input-md" />
                             <span class="input-group-addon">
                                 <span class="glyphicon glyphicon-time"></span>
                             </span>
                         </div>
                     </div>
                 </div>
+                <button type="submit" class="btn btn-primary btn-block">新增體溫紀錄</button>
             </form>
             <hr>
             <form class="form-horizontal">
                 <div class="form-group">
-                    <label class="col-sm-2 col-md-1 control-label" for="blood_pressure1">血壓</label>  
+                    <label class="col-sm-2 col-md-1 control-label" for="systolic">血壓</label>  
                     <div class="col-sm-2 col-md-1">
-                        <input id="blood_pressure1" name="blood_pressure1" type="text" placeholder="" class="form-control input-md">
+                        <input id="systolic" name="systolic" type="text" placeholder="" class="form-control input-md">
                     </div>
-                    <label class="control-label" style="float: left;" for="blood_pressure2">／</label>
+                    <label class="control-label" style="float: left;" for="diastolic">／</label>
                     <div class="col-sm-2 col-md-1">
-                        <input id="blood_pressure2" name="blood_pressure2" type="text" placeholder="" class="form-control input-md">
+                        <input id="diastolic" name="diastolic" type="text" placeholder="" class="form-control input-md">
                     </div>
                 </div>
                 <div class="form-group">
@@ -157,6 +158,7 @@
                         </div>
                     </div>
                 </div>
+                <button type="submit" class="btn btn-primary btn-block">新增血壓心跳紀錄</button>
             </form>
             <hr>
             <form class="form-horizontal">
@@ -182,6 +184,7 @@
                         </div>
                     </div>
                 </div>
+                <button type="submit" class="btn btn-primary btn-block">新增排便紀錄</button>
             </form>
         </div>
 
