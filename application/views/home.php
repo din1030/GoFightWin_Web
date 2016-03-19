@@ -52,90 +52,103 @@
         </div>
 
         <div role="tabpanel" class="tab-pane active" id="basicdata">
-            <form class="form-horizontal">
-            <div class="form-group">
-                <label class="col-sm-2 col-md-2 control-label" for="weight">體重</label>  
-                <div class="col-sm-4 col-md-4 input-group">
-                    <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
-                    <span class="input-group-addon" id="basic-addon2">公斤</span>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-2 col-md-2 control-label" for="weight_time">測量時間</label>
-                <div class="col-sm-4 col-md-4">
-                    <div class='input-group date' id='weight_time'>
-                        <input id="weight_time" name="weight_time"  type='text' class="form-control input-md" />
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-time"></span>
-                        </span>
+            <legend>新增數據</legend>
+            <form id="weight_form" class="form-horizontal" action="/GoFightWin/basicdata/add_weight_action" method="post">
+                <div class="form-group">
+                    <label class="col-sm-2 col-md-1 control-label" for="weight">體重</label>  
+                    <div class="col-sm-4 col-md-4 input-group">
+                        <input id="weight" name="weight" type="text" placeholder="" class="form-control input-md">
+                        <span class="input-group-addon" id="basic-addon2">公斤</span>
                     </div>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label class="col-sm-2 col-md-1 control-label" for="weight_time">測量日期</label>
+                    <div class="col-sm-4 col-md-4">
+                        <div class='input-group date' id='weight_date_picker'>
+                            <input id="weight_date" name="weight_date"  type='text' class="form-control input-md" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 col-md-1 control-label" for="weight_time">測量時間</label>
+                    <div class="col-sm-4 col-md-4">
+                        <div class='input-group date' id='weight_time_picker'>
+                            <input id="weight_time" name="weight_time"  type='text' class="form-control input-md" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-time"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">新增體重紀錄</button>
             </form>
             <hr>
             <form class="form-horizontal">
-            <div class="form-group">
-                <label class="col-sm-2 col-md-2 control-label" for="temperature">體溫</label>  
-                <div class="col-sm-4 col-md-4 input-group">
-                    <input id="temperature" name="temperature" type="text" placeholder="" class="form-control input-md">
-                    <span class="input-group-addon" id="basic-addon2">℃</span>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-2 col-md-2 control-label" for="temp_time">測量時間</label> 
-                <div class="col-sm-4 col-md-4">
-                    <div class='input-group date' id='temp_time'>
-                        <input id="temp_time" name="temp_time"  type='text' class="form-control input-md" />
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-time"></span>
-                        </span>
+                <div class="form-group">
+                    <label class="col-sm-2 col-md-1 control-label" for="temperature">體溫</label>  
+                    <div class="col-sm-4 col-md-4 input-group">
+                        <input id="temperature" name="temperature" type="text" placeholder="" class="form-control input-md">
+                        <span class="input-group-addon" id="basic-addon2">℃</span>
                     </div>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label class="col-sm-2 col-md-1 control-label" for="temp_time">測量時間</label> 
+                    <div class="col-sm-4 col-md-4">
+                        <div class='input-group date' id='temp_time'>
+                            <input id="temp_time" name="temp_time"  type='text' class="form-control input-md" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-time"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </form>
             <hr>
             <form class="form-horizontal">
-            <div class="form-group">
-                <label class="col-sm-2 col-md-2 control-label" for="blood_pressure1">血壓</label>  
-                <div class="col-sm-2 col-md-2">
-                    <input id="blood_pressure1" name="blood_pressure1" type="text" placeholder="" class="form-control input-md">
-                </div>
-                <label class="control-label" style="float: left;" for="blood_pressure2">／</label>
-                <div class="col-sm-2 col-md-2">
-                    <input id="blood_pressure2" name="blood_pressure2" type="text" placeholder="" class="form-control input-md">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-2 col-md-2 control-label" for="heartbeat">心跳</label>
-                <div class="col-sm-2 col-md-2">
-                    <input id="heartbeat" name="heartbeat" type="text" placeholder="" class="form-control input-md">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-2 col-md-2 control-label" for="pressure_time">測量時間</label>  
-                <div class="col-sm-4 col-md-4">
-                    <div class='input-group date' id='pressure_time'>
-                        <input id="pressure_time" name="pressure_time"  type='text' class="form-control input-md" />
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-time"></span>
-                        </span>
+                <div class="form-group">
+                    <label class="col-sm-2 col-md-1 control-label" for="blood_pressure1">血壓</label>  
+                    <div class="col-sm-2 col-md-1">
+                        <input id="blood_pressure1" name="blood_pressure1" type="text" placeholder="" class="form-control input-md">
+                    </div>
+                    <label class="control-label" style="float: left;" for="blood_pressure2">／</label>
+                    <div class="col-sm-2 col-md-1">
+                        <input id="blood_pressure2" name="blood_pressure2" type="text" placeholder="" class="form-control input-md">
                     </div>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label class="col-sm-2 col-md-1 control-label" for="heartbeat">心跳</label>
+                    <div class="col-sm-2 col-md-1">
+                        <input id="heartbeat" name="heartbeat" type="text" placeholder="" class="form-control input-md">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2 col-md-1 control-label" for="pressure_time">測量時間</label>  
+                    <div class="col-sm-4 col-md-4">
+                        <div class='input-group date' id='pressure_time'>
+                            <input id="pressure_time" name="pressure_time"  type='text' class="form-control input-md" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-time"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
             </form>
             <hr>
             <form class="form-horizontal">
-            <div class="form-group">
-                <label class="col-sm-2 col-md-2 control-label" for="defecation_time">排便</label>  
-                <div class="col-sm-4 col-md-4">
-                    <div class='input-group date' id='defecation_time'>
-                        <input id="defecation_time" name="defecation_time"  type='text' class="form-control input-md" />
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-time"></span>
-                        </span>
+                <div class="form-group">
+                    <label class="col-sm-2 col-md-1 control-label" for="defecation_time">排便</label>  
+                    <div class="col-sm-4 col-md-4">
+                        <div class='input-group date' id='defecation_time'>
+                            <input id="defecation_time" name="defecation_time"  type='text' class="form-control input-md" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-time"></span>
+                            </span>
+                        </div>
                     </div>
                 </div>
-            </div>
             </form>
         </div>
 
@@ -163,7 +176,8 @@
 </div> -->
 <script type="text/javascript">
     $(document).ready(function() {
-        $('#weight_time').datetimepicker({
+
+        $('#weight_time_picker').datetimepicker({
             format: 'YYYY/MM/DD hh:mm A',
             viewMode: 'days',
             stepping: 5
@@ -183,5 +197,41 @@
             viewMode: 'days',
             stepping: 5
         });
+
+        $('form').ajaxForm({
+                beforeSend: function(xhr) {
+                    $('#system-message').html('處理中...');
+                    $('#system-message').show();
+                },
+                success: function(error) {
+                    if (error) {
+                        $('#form_alert').html(error);
+                        $('#form_alert').show();
+                        $('#system-message').fadeOut();
+                    } else {
+                        $('#form_alert').hide();
+                        $('#form_alert').empty();
+
+                        // $.ajax({
+                        //     url: '/iBeaGuide/exhibitions/print_exh_list',
+                        //     type: "GET",
+                        //     dataType: 'html',
+                        //     success: function(html_block) {
+                        //         $('#exh_list_block').html(html_block);
+                        //         $('#exh_form_block').empty();
+                        //         $('[data-toggle="table"]').bootstrapTable();
+                        //         $('div.sortable.both:last').removeClass('th-inner sortable both').css('padding', '8px');
+                        //         $('#system-message').html('完成');
+                        //         $('#system-message').fadeOut();
+                        //         $.scrollTo($('#add-exh-btn'), 500, {offset: -10});
+                        //     }
+                        // });
+
+                        $('#system-message').html('完成');
+                        $('#system-message').fadeOut();
+                    }
+                }
+            });
+
     });
 </script>

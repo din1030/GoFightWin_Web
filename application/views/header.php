@@ -14,9 +14,9 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="/GoFightWin/assets/Bootstrap/js/bootstrap.min.js"></script>
 
-        <!-- single js files: jquery-pjax / form / scrollTo-->
+         single js files: jquery-pjax / form / scrollTo
         <!-- <script src="/GoFightWin/assets/javascript/jquery.pjax.js"></script> -->
-        <!-- <script src="/GoFightWin/assets/javascript/jquery.form.js"></script> -->
+        <script src="/GoFightWin/assets/javascript/jquery.form.js"></script>
         <!-- <script src="/GoFightWin/assets/javascript/jquery.scrollTo.min.js"></script> -->
 
         <!-- bootstrap-table -->
