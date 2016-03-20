@@ -36,7 +36,7 @@ class DayReport extends CI_Controller {
 	        	'table_open' => '<table class="table table-striped">'
 			);
 
-        	$date = $this->input->post('search_date');
+        	$date = str_replace('/', '-', $this->input->post('search_date'));
 
 			$this->table->set_template($template);
 
