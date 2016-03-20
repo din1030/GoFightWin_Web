@@ -7,7 +7,7 @@ html, body, table {
     height: 100%;
     margin: 0 auto -50px;
     padding: 0 0 100px 0;
-    background-color: #eff6f9;
+    background-color: #F7FDB6;
 }
 
 .header, .header a {
@@ -15,7 +15,7 @@ html, body, table {
     margin-bottom: 20px;
     font-size: 1.4em;
     color: #FFF;
-    background-color: #41B3D3;
+    background-color: #21825C;
 }
 
 a:hover {
@@ -28,7 +28,7 @@ a:hover {
 
 .footer {
     color: #FFF;
-    background-color: #444444;
+    background-color: #21825C;
     padding: 15px 0;
     font-size: 15px;
     height: 50px;
