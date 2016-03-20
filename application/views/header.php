@@ -51,12 +51,12 @@
     <body>
         <div id="wrap">
             <div class="header">
-                <h3>
+                <h4>
                     <a href="/GoFightWin/">
-                        <!-- <img src="/GoFightWin/assets/logo.png" alt="GoFightWin" height="40" width="40" style="vertical-align: sub" /> -->
+                        <img src="/GoFightWin/assets/logo.png" alt="GoFightWin" height="40" width="40" style="vertical-align: sub" />
                         Go Fight Win 每日記錄
                     </a>
-                </h3>
+                </h4>
             </div>
             <div id="system-message-block">
                 <div id="system-message"></div>
