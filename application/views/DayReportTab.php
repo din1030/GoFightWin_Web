@@ -44,37 +44,37 @@
     <div>
     </div>
 </div>
-<script type="text/javascript">
-	$(document).ready(function() {
-		$('#food_form').ajaxForm({
-            type: 'POST',
-            beforeSend: function(xhr) {
-                $('#system-message').html('處理中...');
-                $('#system-message').show();
-            },
-            success: function(error) {
-                // if (error) {
-                //     $('#system-message').html(error);
-                //     $('#system-message').show();
-                    // $('#system-message').fadeOut();
-                // } else {
-                    // $('#form_alert').hide();
-                    // $('#form_alert').empty();
-                    // $('form').clearForm();
+<!-- <script type="text/javascript">
+// 	$(document).ready(function() {
+// 		$('#food_form').ajaxForm({
+//             type: 'POST',
+//             beforeSend: function(xhr) {
+//                 $('#system-message').html('處理中...');
+//                 $('#system-message').show();
+//             },
+//             success: function(error) {
+//                 // if (error) {
+//                 //     $('#system-message').html(error);
+//                 //     $('#system-message').show();
+//                     // $('#system-message').fadeOut();
+//                 // } else {
+//                     // $('#form_alert').hide();
+//                     // $('#form_alert').empty();
+//                     // $('form').clearForm();
 
-                    $.ajax({
-                        url: '/GoFightWin/DayReport/search_date_action',
-                        type: "GET",
-                        dataType: 'html',
-                        success: function(html_block) {
-                            $('#day_report_result').html(html_block);
-                        }
-                    });
+//                     $.ajax({
+//                         url: '/GoFightWin/DayReport/search_date_action',
+//                         type: "GET",
+//                         dataType: 'html',
+//                         success: function(html_block) {
+//                             $('#day_report_result').html(html_block);
+//                         }
+//                     });
 
-                    $('#system-message').html('完成');
-                    $('#system-message').fadeOut();
-                // }
-            }
-        });
-	});
-</script>
+//                     $('#system-message').html('完成');
+//                     $('#system-message').fadeOut();
+//                 // }
+//             }
+//         });
+// 	});
+</script> -->
