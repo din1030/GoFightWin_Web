@@ -36,7 +36,7 @@ class Food extends CI_Controller {
         } else {
         	$data = array(
 		        'food' => $this->input->post('food'),
-		        'food' => $this->input->post('food_quantity'),
+		        'food_quantity' => $this->input->post('food_quantity'),
 		        'date' => $this->input->post('food_date'),
 		        'time' => $this->input->post('food_time')
 			);
