@@ -1,5 +1,5 @@
 <div class="well">
-	<form id="food_form" class="form-horizontal" action="/GoFightWin/DayReport/search_date_action" method="post">
+	<form id="food_form" class="form-horizontal">
 	    <div class="form-group">
 	        <label class="col-xs-12 col-sm-2 col-md-2 control-label" for="search_date">選擇日期</label>
 	        <div class="col-sm-4 col-md-4">
@@ -67,7 +67,7 @@
                         type: "GET",
                         dataType: 'html',
                         success: function(html_block) {
-                            $('#day_report_result').replaceWith(html_block);
+                            $('#day_report_result').html(html_block);
                         }
                     });
 
