@@ -10,6 +10,7 @@
 	                </span>
 	            </div>
 	        </div>
+	        <button type="submit" class="btn btn-md btn-primary">查詢</button>
 	    </div>
 	</form>
 </div>
