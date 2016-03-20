@@ -53,11 +53,11 @@
                 $('#system-message').show();
             },
             success: function(error) {
-                if (error) {
-                    $('#system-message').html(error);
-                    $('#system-message').show();
+                // if (error) {
+                //     $('#system-message').html(error);
+                //     $('#system-message').show();
                     // $('#system-message').fadeOut();
-                } else {
+                // } else {
                     // $('#form_alert').hide();
                     // $('#form_alert').empty();
                     // $('form').clearForm();
@@ -73,7 +73,7 @@
 
                     $('#system-message').html('完成');
                     $('#system-message').fadeOut();
-                }
+                // }
             }
         });
 	});
