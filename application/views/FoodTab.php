@@ -1,5 +1,5 @@
 <legend>新增飲食紀錄</legend>
-<form id="food_form" class="form-horizontal" action="/GoFightWin/Food/add_food_action" method="post">
+<form id="food_form" class="form-horizontal form-general" action="/GoFightWin/Food/add_food_action" method="post">
     <div class="form-group">
         <label class="col-xs-12 col-sm-2 col-md-2 control-label" for="food">飲食項目</label>  
         <div class="col-sm-4 col-md-4">
