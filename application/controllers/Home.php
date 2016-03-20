@@ -21,7 +21,8 @@ class Home extends CI_Controller {
 	public function index()
 	{	
 		$template = array(
-	        'table_open' => '<table class="table table-bordered table-bordered">'
+	        'table_open' => '<table class="table table-striped table-bordered">',
+	        'heading_row_start'     => '<tr class="warning">'
 		);
 
 		$this->table->set_template($template);
