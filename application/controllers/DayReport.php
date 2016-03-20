@@ -42,27 +42,27 @@ class DayReport extends CI_Controller {
 
 			$this->db->select('weight, SUBSTRING(time,1,5)');
 			$this->db->from('weight');
-			$this->db->where("date = $date");
+			$this->db->where("date = $date", flase);
 			$data['weight'] = $this->db->get();
 
 			$this->db->select('temperature, SUBSTRING(time,1,5)');
 			$this->db->from('temperature');
-			$this->db->where("date = $date");
+			$this->db->where("date = $date", flase);
 			$data['temp'] = $this->db->get();
 
 			$this->db->select('systolic, diastolic, heartbeat, SUBSTRING(time,1,5)');
 			$this->db->from('blood_pressure');
-			$this->db->where("date = $date");
+			$this->db->where("date = $date", flase);
 			$data['pressure'] = $this->db->get();
 
 			$this->db->select('SUBSTRING(time,1,5)');
 			$this->db->from('defecation');
-			$this->db->where("date = $date");
+			$this->db->where("date = $date", flase);
 			$data['defecation'] = $this->db->get();
 
 			$this->db->select('food, quantity, SUBSTRING(time,1,5)');
 			$this->db->from('food');
-			$this->db->where("date = $date");
+			$this->db->where("date = $date", flase);
 			$data['food'] = $this->db->get();
 
 			$this->load->view('DayReportTab', $data);
