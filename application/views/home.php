@@ -31,14 +31,14 @@
 
             <legend>飲食紀錄</legend>
             <div>
-                <?php $this->table->set_heading('飲食項目', '份量', '日期', '時間'); ?>
+                <?php $this->table->set_heading('飲食項目', '份量', '時間'); ?>
                 <?= $this->table->generate($food); ?>
             </div>
 
             <legend>用藥/醫療紀錄</legend>
             <div>
             </div>
-            
+
             <legend>運動</legend>
             <div>
             </div>
@@ -60,7 +60,9 @@
             
         </div>
 
-        <div role="tabpanel" class="tab-pane" id="dayreport"></div>
+        <div role="tabpanel" class="tab-pane" id="dayreport">
+            <?php $this->load->view('DayReportTab'); ?>
+        </div>
 
     </div>
 
@@ -77,6 +79,10 @@
             format: 'YYYY/MM/DD',
             useCurrent: true,
             viewMode: 'days'
+            // stepping: 5
+        });
+        $('#search_date_picker').datetimepicker({
+            defaultDate: new date();
             // stepping: 5
         });
         $('.bd_time_picker').datetimepicker({
