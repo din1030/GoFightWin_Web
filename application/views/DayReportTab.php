@@ -30,6 +30,8 @@
 </div>
 <script type="text/javascript">
 	$(document).ready(function() {
+		$('#search_date').val(moment(new Date()).format("YYYY/MM/DD"));
+
 		$('#search_form').ajaxForm({
             type: 'POST',
             dataType: 'html',

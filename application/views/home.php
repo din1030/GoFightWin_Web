@@ -97,10 +97,10 @@
             viewMode: 'days'
             // stepping: 5
         });
-        $('#search_date_picker').datetimepicker({
-            defaultDate: moment(new Date()).format("YYYY/MM/DD")
+        // $('#search_date_picker').datetimepicker({
+            // defaultDate: moment(new Date()).format("YYYY/MM/DD")
             // stepping: 5
-        });
+        // });
         $('.bd_time_picker').datetimepicker({
             format: 'hh:mm A',
             useCurrent: true,
