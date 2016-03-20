@@ -61,6 +61,22 @@
         </div>
 
         <div role="tabpanel" class="tab-pane" id="dayreport">
+            <div class="well">
+                <form id="search_form" class="form-horizontal" action="/GoFightWin/DayReport/search_date_action" method="POST">
+                    <div class="form-group">
+                        <label class="col-xs-12 col-sm-2 col-md-2 control-label" for="search_date">選擇日期</label>
+                        <div class="col-sm-4 col-md-4">
+                            <div class='input-group date bd_date_picker' id='search_date_picker'>
+                                <input id="search_date" name="search_date" type='text' class="form-control input-md" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-md btn-primary">查詢</button>
+                    </div>
+                </form>
+            </div>
             <?php $this->load->view('DayReportTab'); ?>
         </div>
 
