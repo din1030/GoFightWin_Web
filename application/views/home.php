@@ -94,11 +94,17 @@
         
         $('#food_form').ajaxForm({
             type: 'POST',
+            dataType: 'html',
             beforeSend: function(xhr) {
                 $('#system-message').html('處理中...');
                 $('#system-message').show();
             },
-            success: function(error) {
+            // success: function(error) {
+            success: function(html_block) {
+                $('#day_report_result').html(html_block);
+                $('#system-message').html('完成');
+                $('#system-message').fadeOut();
+            }
                 // if (error) {
                 //     $('#system-message').html(error);
                 //     $('#system-message').show();
@@ -108,19 +114,18 @@
                     // $('#form_alert').empty();
                     // $('form').clearForm();
 
-                    $.ajax({
-                        url: '/GoFightWin/DayReport/search_date_action',
-                        type: "GET",
-                        dataType: 'html',
-                        success: function(html_block) {
-                            $('#day_report_result').html(html_block);
-                        }
-                    });
+                    // $.ajax({
+                    //     url: '/GoFightWin/DayReport/print_result',
+                    //     type: "GET",
+                    //     dataType: 'html',
+                    //     success: function(html_block) {
+                    //         $('#day_report_result').html(html_block);
+                    //     }
+                    // });
 
-                    $('#system-message').html('完成');
-                    $('#system-message').fadeOut();
+                    
                 // }
-            }
+            // }
         });
 
         $('.form-general').ajaxForm({
