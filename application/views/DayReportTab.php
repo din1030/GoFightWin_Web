@@ -1,5 +1,5 @@
 <div class="well">
-	<form id="food_form" class="form-horizontal" action="/GoFightWin/DayReport/search_date_action" method="GET">
+	<form id="search_form" class="form-horizontal" action="/GoFightWin/DayReport/search_date_action" method="POST">
 	    <div class="form-group">
 	        <label class="col-xs-12 col-sm-2 col-md-2 control-label" for="search_date">選擇日期</label>
 	        <div class="col-sm-4 col-md-4">
@@ -44,37 +44,33 @@
     <div>
     </div>
 </div>
-<!-- <script type="text/javascript">
-// 	$(document).ready(function() {
-// 		$('#food_form').ajaxForm({
-//             type: 'POST',
-//             beforeSend: function(xhr) {
-//                 $('#system-message').html('處理中...');
-//                 $('#system-message').show();
-//             },
-//             success: function(error) {
-//                 // if (error) {
-//                 //     $('#system-message').html(error);
-//                 //     $('#system-message').show();
-//                     // $('#system-message').fadeOut();
-//                 // } else {
-//                     // $('#form_alert').hide();
-//                     // $('#form_alert').empty();
-//                     // $('form').clearForm();
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#search_form').ajaxForm({
+            type: 'POST',
+            dataType: 'html',
+            beforeSend: function(xhr) {
+                $('#system-message').html('處理中...');
+                $('#system-message').show();
+            },
+            // success: function(error) {
+            success: function(html_block) {
+                $('#day_report_result').html(html_block);
+                $('#system-message').html('完成');
+                $('#system-message').fadeOut();
 
-//                     $.ajax({
-//                         url: '/GoFightWin/DayReport/search_date_action',
-//                         type: "GET",
-//                         dataType: 'html',
-//                         success: function(html_block) {
-//                             $('#day_report_result').html(html_block);
-//                         }
-//                     });
+	            // $.ajax({
+	            //     url: '/GoFightWin/DayReport/search_date_action',
+	            //     type: "GET",
+	            //     dataType: 'html',
+	            //     success: function(html_block) {
+	            //         $('#day_report_result').html(html_block);
+	            //     }
+	            // });
 
-//                     $('#system-message').html('完成');
-//                     $('#system-message').fadeOut();
-//                 // }
-//             }
-//         });
-// 	});
-</script> -->
+	            // $('#system-message').html('完成');
+	            // $('#system-message').fadeOut();
+            }
+        });
+	});
+</script>
