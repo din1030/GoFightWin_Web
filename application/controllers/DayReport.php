@@ -65,7 +65,22 @@ class DayReport extends CI_Controller {
 			$this->db->where('date', $date);
 			$data['food'] = $this->db->get();
 
-			echo $this->load->view('DayReportTab', $data);
+			$this->table->set_heading('體重', '測量時間'); 
+	        echo $this->table->generate($data['weight']); 
+	        // <hr>
+	        $this->table->set_heading('體溫', '測量時間'); 
+	        echo $this->table->generate($data['temp']); 
+	        // <hr>
+	        $this->table->set_heading('收縮壓', '舒張壓', '心跳', '測量時間'); 
+	        echo $this->table->generate($data['pressure']); 
+	        // <hr>
+	        $this->table->set_heading('排便時間'); 
+	        echo $this->table->generate($data['defecation']); 
+	        // <hr>
+	        $this->table->set_heading('飲食紀錄'); 
+	        echo $this->table->generate($data['food']); 
+
+			// $this->load->view('DayReportTab', $data);
 
         }
     }
