@@ -67,7 +67,7 @@
                         type: "GET",
                         dataType: 'html',
                         success: function(html_block) {
-                            $('#day_report_result').html(html_block);
+                            $('#day_report_result').replaceWith(html_block);
                         }
                     });
 
