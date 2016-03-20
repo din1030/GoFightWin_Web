@@ -53,7 +53,7 @@
         </div>
 
         <div role="tabpanel" class="tab-pane" id="food">
-            
+            <?php $this->load->view('FoodTab'); ?>
         </div>
 
         <div role="tabpanel" class="tab-pane" id="medical">
