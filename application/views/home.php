@@ -82,7 +82,7 @@
             // stepping: 5
         });
         $('#search_date_picker').datetimepicker({
-            defaultDate: new date();
+            defaultDate: new date()
             // stepping: 5
         });
         $('.bd_time_picker').datetimepicker({
