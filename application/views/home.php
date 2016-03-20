@@ -28,23 +28,19 @@
                 <?php $this->table->set_heading('排便時間'); ?>
                 <?= $this->table->generate($defecation); ?>
             </div>
+
             <legend>飲食紀錄</legend>
             <div>
-                <ul>
-                    <li>尚無紀錄！</li>
-                </ul>
+                <?php $this->table->set_heading('飲食項目', '份量', '日期', '時間'); ?>
+                <?= $this->table->generate($food); ?>
             </div>
+
             <legend>用藥/醫療紀錄</legend>
             <div>
-                <ul>
-                    <li>尚無紀錄！</li>
-                </ul>
             </div>
+            
             <legend>運動</legend>
             <div>
-                <ul>
-                    <li>尚無紀錄！</li>
-                </ul>
             </div>
         </div>
 

@@ -46,6 +46,11 @@ class Home extends CI_Controller {
 		$this->db->where('date = CURDATE()');
 		$data['defecation'] = $this->db->get();
 
+		$this->db->select('food, quantity, date, SUBSTRING(time,1,5)');
+		$this->db->from('food');
+		$this->db->where('date = CURDATE()');
+		$data['food'] = $this->db->get();
+
 		$this->load->view('header');
 		$this->load->view('home', $data);
 		$this->load->view('footer');
