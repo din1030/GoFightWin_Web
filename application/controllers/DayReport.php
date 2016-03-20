@@ -65,9 +65,14 @@ class DayReport extends CI_Controller {
 			$this->db->where('date', $date);
 			$data['food'] = $this->db->get();
 
-			$this->load->view('DayReportTab', $data);
+			echo $this->load->view('DayReportTab', $data);
 
         }
+    }
+
+    public function print_result($data)
+    {
+    	
     }
 
 }
