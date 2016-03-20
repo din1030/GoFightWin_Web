@@ -46,7 +46,7 @@
 </div>
 <script type="text/javascript">
 	$(document).ready(function() {
-		$('form').ajaxForm({
+		$('#food_form').ajaxForm({
             type: 'POST',
             beforeSend: function(xhr) {
                 $('#system-message').html('處理中...');

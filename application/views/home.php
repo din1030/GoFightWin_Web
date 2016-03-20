@@ -92,7 +92,7 @@
             stepping: 5
         });
         
-        $('form').ajaxForm({
+        $('.form-general').ajaxForm({
             type: 'POST',
             resetForm: true,
             beforeSubmit: function(arr, $form, options) { 
@@ -115,7 +115,7 @@
                 if (error) {
                     $('#system-message').html(error);
                     $('#system-message').show();
-                    // $('#system-message').fadeOut();
+                    $('#system-message').fadeOut();
                 } else {
                     // $('#form_alert').hide();
                     // $('#form_alert').empty();
