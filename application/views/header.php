@@ -7,7 +7,7 @@
     	<meta property="og:description" content="Go Fight Win 每日記錄" />
     	<meta property="og:url" content="http://52.69.53.255/GoFightWin/" />
     	
-        <!-- <link rel="shortcut icon" href="favicon.ico"> -->
+        <link rel="shortcut icon" href="favicon.ico">
         <title>Go Fight Win 每日記錄</title>
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="/GoFightWin/assets/Bootstrap/css/bootstrap.css" />
