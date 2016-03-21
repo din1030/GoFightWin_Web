@@ -76,8 +76,8 @@
                                 </span>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-md btn-primary">查詢</button>
                     </div>
+                    <button type="submit" class="btn btn-md btn-primary btn-block">查詢</button>
                 </form>
             </div>
             <?php $this->load->view('DayReportTab'); ?>
