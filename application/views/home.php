@@ -1,7 +1,7 @@
 <div>
 
   <!-- Nav tabs -->
- 	<ul class="nav nav-tabs margin-bottom-30" role="tablist">
+ 	<ul id="main_tab" class="nav nav-tabs margin-bottom-30" role="tablist">
         <li role="presentation" class="active"><a href="/GoFightWin/">本日紀錄</a></li>
         <!-- <li role="presentation" class="active"><a href="#today" aria-controls="today" role="tab" data-toggle="tab">本日紀錄</a></li> -->
     	<li role="presentation"><a href="#basicdata" aria-controls="basicdata" role="tab" data-toggle="tab">基本數據</a></li>
@@ -93,7 +93,7 @@
 </div> -->
 <script type="text/javascript">
     $(document).ready(function() {
-        $('#myTab').tabCollapse();
+        $('#main_tab').tabCollapse();
 
         $('.bd_date_picker').datetimepicker({
             format: 'YYYY/MM/DD',
