@@ -57,6 +57,12 @@ class Home extends CI_Controller {
 		$this->db->order_by('time', 'ASC');
 		$data['food'] = $this->db->get();
 
+		$this->db->select('type, amount, SUBSTRING(time,1,5)');
+		$this->db->from('sport');
+		$this->db->where('date = CURDATE()');
+		$this->db->order_by('time', 'ASC');
+		$data['sport'] = $this->db->get();
+
 		$this->load->view('header');
 		$this->load->view('home', $data);
 		$this->load->view('footer');
