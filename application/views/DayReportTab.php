@@ -16,8 +16,8 @@
 
     <legend>飲食紀錄</legend>
     <div>
-        <?php $this->table->set_heading('運動項目', '運動量', '時間'); ?>
-        <?= $this->table->generate($sport); ?>
+    	<?php $this->table->set_heading('飲食項目', '份量', '時間'); ?>
+        <?= $this->table->generate($food); ?>
     </div>
 
     <legend>用藥/醫療紀錄</legend>
@@ -26,8 +26,8 @@
 
     <legend>運動</legend>
     <div>
-    	<?php $this->table->set_heading('飲食項目', '份量', '時間'); ?>
-        <?= $this->table->generate($food); ?>
+        <?php $this->table->set_heading('運動項目', '運動量', '時間'); ?>
+        <?= $this->table->generate($sport); ?>
     </div>
 </div>
 <script type="text/javascript">

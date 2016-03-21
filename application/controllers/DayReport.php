@@ -71,6 +71,12 @@ class DayReport extends CI_Controller {
 			$this->db->order_by('time', 'ASC');
 			$data['food'] = $this->db->get();
 
+			$this->db->select('type, amount, SUBSTRING(time,1,5)');
+			$this->db->from('sport');
+			$this->db->where('date', $date);
+			$this->db->order_by('time', 'ASC');
+			$data['sport'] = $this->db->get();
+
 			// $this->table->set_heading('體重', '測量時間'); 
 	  //       echo $this->table->generate($data['weight']); 
 	  //       // <hr>
