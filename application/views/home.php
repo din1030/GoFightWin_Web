@@ -93,6 +93,7 @@
 </div> -->
 <script type="text/javascript">
     $(document).ready(function() {
+        $('#myTab').tabCollapse();
 
         $('.bd_date_picker').datetimepicker({
             format: 'YYYY/MM/DD',

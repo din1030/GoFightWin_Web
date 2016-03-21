@@ -27,7 +27,7 @@
         <!-- single js files: jquery-pjax / form / scrollTo -->
         <!-- <script src="/GoFightWin/assets/javascript/jquery.pjax.js"></script> -->
         <script src="/GoFightWin/assets/jquery.form.js"></script>
-        <!-- <script src="/GoFightWin/assets/javascript/jquery.scrollTo.min.js"></script> -->
+        <script src="/GoFightWin/assets/bootstrap-tabcollapse.js"></script>
 
         <!-- bootstrap-table -->
         <!-- <link rel="stylesheet" href="/GoFightWin/assets/bootstrap-table/src/bootstrap-table.css"> -->
