@@ -2,7 +2,7 @@
 
   <!-- Nav tabs -->
  	<ul id="main_tab" class="nav nav-tabs margin-bottom-30" role="tablist">
-        <li role="presentation" class="active"><a href="/GoFightWin/" aria-controls="basicdata" role="tab" data-toggle="tab">本日紀錄</a></li>
+        <li role="presentation" class="active"><a href="/GoFightWin/" aria-controls="today" role="tab" data-toggle="tab">本日紀錄</a></li>
         <!-- <li role="presentation" class="active"><a href="#today" aria-controls="today" role="tab" data-toggle="tab">本日紀錄</a></li> -->
     	<li role="presentation"><a href="#basicdata" aria-controls="basicdata" role="tab" data-toggle="tab">基本數據</a></li>
         <li role="presentation"><a href="#food" aria-controls="food" role="tab" data-toggle="tab">多吃多健康</a></li>
@@ -11,7 +11,7 @@
         <li role="presentation"><a href="#dayreport" aria-controls="dayreport" role="tab" data-toggle="tab">日期搜尋</a></li>
     </ul>
 
-  <!-- Tab panes -->
+    <!-- Tab panes -->
     <div class="tab-content">
 
         <div role="tabpanel" class="tab-pane active" id="today">
