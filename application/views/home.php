@@ -41,6 +41,8 @@
 
             <legend>運動</legend>
             <div>
+                <?php $this->table->set_heading('運動項目', '運動量', '時間'); ?>
+                <?= $this->table->generate($sport); ?>
             </div>
         </div>
 
@@ -57,7 +59,7 @@
         </div>
 
         <div role="tabpanel" class="tab-pane" id="sport">
-            
+            <?php $this->load->view('SportTab'); ?>
         </div>
 
         <div role="tabpanel" class="tab-pane" id="dayreport">
