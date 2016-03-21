@@ -7,9 +7,9 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="col-xs-12 col-sm-2 col-md-2 control-label" for="amount">份量</label>  
+        <label class="col-xs-12 col-sm-2 col-md-2 control-label" for="amount">運動量</label>  
         <div class="col-sm-4 col-md-4">
-            <input id="sport_quantity" name="sport_quantity" type="text" class="form-control input-md">
+            <input id="amount" name="amount" type="text" class="form-control input-md">
         </div>
     </div>
     <div class="form-group">
