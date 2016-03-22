@@ -95,6 +95,20 @@
     $(document).ready(function() {
         $('#main_tab').tabCollapse();
 
+        $('a[href="#today"]').on('shown.bs.tab', function (e) {
+            // $.ajax({
+            //     url: '/GoFightWin/Home/print_data_table',
+            //     type: "GET",
+            //     dataType: 'html',
+            //     success: function(html_block) {
+            //         $('#today').html(html_block);
+            //         // $('#system-message').html('完成');
+            //         // $('#system-message').fadeOut();
+            //     }
+            // });
+            location.reload();
+        })
+
         $('.bd_date_picker').datetimepicker({
             format: 'YYYY/MM/DD',
             useCurrent: true,
