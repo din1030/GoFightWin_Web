@@ -77,20 +77,11 @@ class DayReport extends CI_Controller {
 			$this->db->order_by('time', 'ASC');
 			$data['sport'] = $this->db->get();
 
-			// $this->table->set_heading('體重', '測量時間'); 
-	  //       echo $this->table->generate($data['weight']); 
-	  //       // <hr>
-	  //       $this->table->set_heading('體溫', '測量時間'); 
-	  //       echo $this->table->generate($data['temp']); 
-	  //       // <hr>
-	  //       $this->table->set_heading('收縮壓', '舒張壓', '心跳', '測量時間'); 
-	  //       echo $this->table->generate($data['pressure']); 
-	  //       // <hr>
-	  //       $this->table->set_heading('排便時間'); 
-	  //       echo $this->table->generate($data['defecation']); 
-	  //       // <hr>
-	  //       $this->table->set_heading('飲食紀錄'); 
-	  //       echo $this->table->generate($data['food']); 
+			$this->db->select('memo, SUBSTRING(time,1,5)');
+			$this->db->from('memo');
+			$this->db->where('date', $date);
+			$this->db->order_by('time', 'ASC');
+			$data['memo'] = $this->db->get();
 
 			$this->load->view('DayReportTab', $data);
 

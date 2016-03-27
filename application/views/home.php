@@ -46,6 +46,12 @@
                 <?php $this->table->set_heading('運動項目', '運動量', '時間'); ?>
                 <?= $this->table->generate($sport); ?>
             </div>
+
+            <legend>Memo</legend>
+            <div>
+                <?php $this->table->set_heading('內容', '時間'); ?>
+                <?= $this->table->generate($memo); ?>
+            </div>
         </div>
 
         <div role="tabpanel" class="tab-pane" id="basicdata">
