@@ -8,6 +8,7 @@
         <li role="presentation"><a href="#food" aria-controls="food" role="tab" data-toggle="tab">多吃多健康</a></li>
         <li role="presentation"><a href="#medical" aria-controls="medical" role="tab" data-toggle="tab">藥到病除</a></li>
         <li role="presentation"><a href="#sport" aria-controls="sport" role="tab" data-toggle="tab">運動強身</a></li>
+        <li role="presentation"><a href="#dayreport" aria-controls="dayreport" role="tab" data-toggle="tab">Memo</a></li>
         <li role="presentation"><a href="#dayreport" aria-controls="dayreport" role="tab" data-toggle="tab">日期搜尋</a></li>
     </ul>
 
@@ -57,6 +58,10 @@
 
         <div role="tabpanel" class="tab-pane" id="medical">
             
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="medical">
+            <?php $this->load->view('MemoTab'); ?>
         </div>
 
         <div role="tabpanel" class="tab-pane" id="sport">
