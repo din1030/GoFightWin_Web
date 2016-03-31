@@ -27,8 +27,8 @@ class Sport extends CI_Controller {
 
     public function add_sport_action()
     {
-        $this->form_validation->set_rules('sport', '飲食項目', 'trim|required');
-        $this->form_validation->set_rules('amount', '份量', 'trim|required');
+        $this->form_validation->set_rules('sport', '項目', 'trim|required');
+        $this->form_validation->set_rules('amount', '運動量', 'trim|required');
         $this->form_validation->set_rules('sport_date', '日期', 'trim|required');
         $this->form_validation->set_rules('sport_time', '時間', 'trim|required');
         if ($this->form_validation->run() == false) {
